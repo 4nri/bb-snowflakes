@@ -1,3 +1,4 @@
+import {DEFAULTS} from '../src/snow.js';
 import assert from 'node:assert/strict';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -45,8 +46,8 @@ try{
  assert.equal(await page.locator('#blur').inputValue(),'0.25','Immediate reload flushes pending blur');
  const old={version:1,settings:{count:40,size:2,sizeVariation:.8,enabled:true},area:'hero'};
  await page.goto('about:blank');await page.goto(base+'/#'+new URLSearchParams({snow:JSON.stringify(old)}));
- await page.locator('#main-screen canvas').waitFor();assert.equal(await page.locator('#blur').inputValue(),'0.4');
- await page.locator('#reset').click();assert.equal(await page.locator('#blur').inputValue(),'0.4');
+ await page.locator('#main-screen canvas').waitFor();assert.equal(await page.locator('#blur').inputValue(),String(DEFAULTS.blur));
+ await page.locator('#reset').click();assert.equal(await page.locator('#blur').inputValue(),String(DEFAULTS.blur));
  await page.setViewportSize({width:393,height:852});await page.locator('#blur').scrollIntoViewIfNeeded();
  const geometry=await page.evaluate(()=>({slider:document.querySelector('#blur').getBoundingClientRect().toJSON(),phones:[...document.querySelectorAll('.phone')].map(p=>p.getBoundingClientRect().toJSON()),width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth}));
  assert.ok(geometry.slider.height>=32&&geometry.slider.top>=0&&geometry.slider.bottom<=geometry.height);

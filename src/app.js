@@ -1,13 +1,14 @@
 import {Snow, DEFAULTS, normalize} from './snow.js';
 const $=id=>document.getElementById(id);
-const presets={light:{...DEFAULTS},snow:{...DEFAULTS,count:70,size:2.5,sizeVariation:.9,speed:42,wind:12,sway:16,opacity:.7},blizzard:{...DEFAULTS,count:110,size:2,sizeVariation:1,speed:85,wind:60,sway:20,opacity:.7}};
+const DEFAULT_AREA='hero';
+const presets={base:{...DEFAULTS},snow:{...DEFAULTS,blur:.4,count:70,size:2.5,sizeVariation:.9,speed:42,wind:12,sway:16,opacity:.7},blizzard:{...DEFAULTS,blur:.4,count:110,size:2,sizeVariation:1,speed:85,wind:60,sway:20,opacity:.7}};
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
-let settings={...DEFAULTS},area='content',paused=motion.matches,preset='light',toastTimer,persistTimer,persistTask;
+let settings={...DEFAULTS},area=DEFAULT_AREA,paused=motion.matches,preset='base',toastTimer,persistTimer,persistTask;
 function unpack(value) {
   if(!value||typeof value!=='object'||Array.isArray(value)) throw new Error('Bad configuration');
   const input=value.settings??value;
   if(!input||typeof input!=='object'||Array.isArray(input)||!Object.keys(DEFAULTS).some(key=>Object.hasOwn(input,key))) throw new Error('Not snow settings');
-  return {settings:normalize(input),area:value.area==='hero'?'hero':'content'};
+  return {settings:normalize(input),area:['hero','content'].includes(value.area)?value.area:DEFAULT_AREA};
 }
 let restored=false;
 try {
@@ -19,7 +20,7 @@ try {
     try{saved=localStorage.getItem('bb-snow-settings-v1')||saved;}catch{/* Shared links still work without storage. */}
   }
   if(saved){const value=unpack(JSON.parse(saved));settings=value.settings;area=value.area;restored=true;}
-} catch {notify('Не удалось прочитать настройки. Загружен лёгкий снег.');}
+} catch {notify('Не удалось прочитать настройки. Загружены настройки по умолчанию.');}
 if(restored) preset=Object.keys(presets).find(key=>JSON.stringify(settings)===JSON.stringify(presets[key]))||null;
 const renderSamples=[];
 const effects=[$('start-screen'),$('main-screen')].map(el=>new Snow(el,settings,{referenceWidth:393,onFrame:ms=>{renderSamples.push(ms);if(renderSamples.length>240)renderSamples.shift();}}));
@@ -74,7 +75,7 @@ $('area').addEventListener('change',()=>{area=$('area').value;updateClips();pers
 document.querySelectorAll('[data-preset]').forEach(el=>el.addEventListener('click',()=>{preset=el.dataset.preset;settings={...presets[preset]};sync();}));
 $('pause').addEventListener('click',()=>{paused=!paused;updatePlayback();});
 motion.addEventListener('change',event=>{if(event.matches){paused=true;updatePlayback();}});
-$('reset').addEventListener('click',()=>{settings={...DEFAULTS};area='content';preset='light';paused=motion.matches;sync();notify('Настройки сброшены');});
+$('reset').addEventListener('click',()=>{settings={...DEFAULTS};area=DEFAULT_AREA;preset='base';paused=motion.matches;sync();notify('Настройки сброшены');});
 $('export').addEventListener('click',()=>{
   const url=URL.createObjectURL(new Blob([JSON.stringify(payload(),null,2)+'\n'],{type:'application/json'}));
   const anchor=document.createElement('a');anchor.href=url;anchor.download='bb-snow-settings.json';anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Настройки сохранены в JSON');

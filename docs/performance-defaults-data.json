@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-10-22T15:42:27.836Z",
+  "browser": "156.0.8078.48",
+  "durationMs": 30000,
+  "calibration": [],
+  "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+  "results": [
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 120,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 1,
+      "speed": 50,
+      "wind": 12,
+      "sway": 20,
+      "opacity": 0.5,
+      "enabled": true,
+      "area": "hero",
+      "actualSettings": {
+        "count": 120,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 1,
+        "speed": 50,
+        "wind": 12,
+        "sway": 20,
+        "opacity": 0.5,
+        "enabled": true,
+        "area": "hero"
+      },
+      "elapsedMs": 30001.10000014305,
+      "clock": {
+        "frames": 1800,
+        "fps": 59.99780008037763,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 16.80000000000291,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 1800,
+          "fps": 59.99780008037763,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 1800,
+          "fps": 59.99780008037763,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 1.5,
+      "callbackWorkMaxMs": 3,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "dpr": 1
+      },
+      "canvasBuffers": [
+        {
+          "width": 269,
+          "height": 583
+        },
+        {
+          "width": 269,
+          "height": 583
+        }
+      ],
+      "interaction": null,
+      "uiMetrics": "Частиц240FPS60CPU на экран0,70 мс"
+    },
+    {
+      "mode": "demo-mobile",
+      "rate": 10,
+      "count": 120,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 1,
+      "speed": 50,
+      "wind": 12,
+      "sway": 20,
+      "opacity": 0.5,
+      "enabled": true,
+      "area": "hero",
+      "actualSettings": {
+        "count": 120,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 1,
+        "speed": 50,
+        "wind": 12,
+        "sway": 20,
+        "opacity": 0.5,
+        "enabled": true,
+        "area": "hero"
+      },
+      "elapsedMs": 30001.299999952316,
+      "clock": {
+        "frames": 1800,
+        "fps": 59.99740011275714,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 16.80000000000291,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 1800,
+          "fps": 59.99740011275714,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 1800,
+          "fps": 59.99740011275714,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 1.5,
+      "callbackWorkMaxMs": 2.700000047683716,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 393,
+        "height": 852,
+        "dpr": 3
+      },
+      "canvasBuffers": [
+        {
+          "width": 134,
+          "height": 291
+        },
+        {
+          "width": 134,
+          "height": 291
+        }
+      ],
+      "interaction": null,
+      "uiMetrics": "Частиц240FPS60CPU на экран1,20 мс"
+    }
+  ],
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M2 Ultra"
+  },
+  "sources": {
+    "src/snow.js": {
+      "sha256": "52cd2e682ae96d473104ec74bc6f17636d69cc8615498a0889d499ea419fca11",
+      "bytes": 9283,
+      "gzipBytes": 3402
+    },
+    "src/app.js": {
+      "sha256": "184149e22f6d4317def26a2ebf00ee5b08347184b921542ccb6c9e6b3942e91d",
+      "bytes": 10340,
+      "gzipBytes": 3885
+    },
+    "index.html": {
+      "sha256": "4ef431777e71130dc798686689818ad0e961a6bf301b2cc9786fd687060cedb2",
+      "bytes": 8264,
+      "gzipBytes": 2725
+    },
+    "styles.css": {
+      "sha256": "5237b6f1bc316c00a45318620ffbc36d322070aa42685829144e407dc459dd89",
+      "bytes": 13676,
+      "gzipBytes": 3346
+    }
+  }
+}

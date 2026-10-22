@@ -1,5 +1,5 @@
 /** Dependency-free snow. All distances are CSS pixels at referenceWidth. */
-export const DEFAULTS = Object.freeze({count:40, size:2, sizeVariation:0.8, blur:0.4, speed:28, wind:6, sway:10, opacity:0.65, enabled:true});
+export const DEFAULTS = Object.freeze({count:120, size:2, sizeVariation:0.8, blur:1, speed:50, wind:12, sway:20, opacity:0.5, enabled:true});
 const limits = {count:[0,200],size:[0.5,6],sizeVariation:[0,1],blur:[0,1],speed:[0,160],wind:[-100,100],sway:[0,60],opacity:[0,1]};
 export function normalize(input = {}) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new TypeError('Settings must be an object');

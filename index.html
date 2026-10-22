@@ -44,14 +44,14 @@
       </div>
       <div class="playback">
         <div class="playback-controls"><button id="pause" class="button" type="button">Пауза</button><span class="playback-state"><span class="live-dot" id="live-dot" aria-hidden="true"></span><span id="state-label">Снег идёт</span></span></div>
-        <dl class="metrics" id="metrics" aria-label="Производительность анимации"><div><dt>Частиц</dt><dd id="metric-count">80</dd></div><div><dt>FPS</dt><dd id="metric-fps">0</dd></div><div title="Время расчёта и отправки команд Canvas одного экрана, 95-й процентиль. GPU-время не измеряется."><dt>CPU на экран</dt><dd><span id="metric-cost">0,00</span> мс</dd></div></dl>
+        <dl class="metrics" id="metrics" aria-label="Производительность анимации"><div><dt>Частиц</dt><dd id="metric-count">240</dd></div><div><dt>FPS</dt><dd id="metric-fps">0</dd></div><div title="Время расчёта и отправки команд Canvas одного экрана, 95-й процентиль. GPU-время не измеряется."><dt>CPU на экран</dt><dd><span id="metric-cost">0,00</span> мс</dd></div></dl>
       </div>
       <p class="motion-notice" id="motion-notice" hidden>В системе включено уменьшение движения. Нажмите «Запустить», чтобы посмотреть снег.</p>
     </section>
     <aside class="panel" aria-labelledby="settings-title">
       <div class="panel-title"><h2 id="settings-title">Настройки снега</h2><label class="switch" title="Показывать снег"><input id="enabled" type="checkbox" checked aria-label="Показывать снег"><span></span></label></div>
       <div class="panel-scroll" tabindex="0" aria-label="Параметры снега">
-        <fieldset class="control-section"><legend>Пресет <span id="custom-label" hidden>изменён</span></legend><div class="presets"><button type="button" data-preset="light" aria-pressed="true">Лёгкий</button><button type="button" data-preset="snow" aria-pressed="false">Снегопад</button><button type="button" data-preset="blizzard" aria-pressed="false">Метель</button></div></fieldset>
+        <fieldset class="control-section"><legend>Пресет <span id="custom-label" hidden>изменён</span></legend><div class="presets"><button type="button" data-preset="base" aria-pressed="true">Базовый</button><button type="button" data-preset="snow" aria-pressed="false">Снегопад</button><button type="button" data-preset="blizzard" aria-pressed="false">Метель</button></div></fieldset>
         <fieldset class="control-section parameters"><legend>Частицы</legend>
           <div class="range-control"><label for="count">Частиц на экран <output for="count" id="count-value"></output></label><input id="count" type="range" min="0" max="200" step="1"></div>
           <div class="range-control"><label for="size">Максимальный размер <output for="size" id="size-value"></output></label><input id="size" type="range" min="0.5" max="6" step="0.5"></div>
@@ -64,7 +64,7 @@
           <div class="range-control"><label for="wind">Ветер <output for="wind" id="wind-value"></output></label><input id="wind" type="range" min="-100" max="100" step="1"><div class="range-ends"><span>Влево</span><span>Вправо</span></div></div>
           <div class="range-control"><label for="sway">Покачивание <output for="sway" id="sway-value"></output></label><input id="sway" type="range" min="0" max="60" step="1"></div>
         </fieldset>
-        <div class="control-section"><label class="select-row" for="area">Область снега<select id="area"><option value="content">Весь контент</option><option value="hero">Иллюстрация</option></select></label></div>
+        <div class="control-section"><label class="select-row" for="area">Область снега<select id="area"><option value="content">Весь контент</option><option value="hero" selected>Иллюстрация</option></select></label></div>
       </div>
       <div class="panel-bottom">
         <button id="export" class="button primary" type="button">Скачать настройки</button>

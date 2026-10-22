@@ -14,7 +14,7 @@ test('size variation accepts old settings and clamps untrusted values',()=>{
 });
 test('zero particles and zero motion remain valid',()=>{const result=normalize({count:0,speed:0,wind:0,sway:0,opacity:0,enabled:false});assert.equal(result.count,0);assert.equal(result.opacity,0);assert.equal(result.speed,0);assert.equal(result.enabled,false);});
 test('depth blur is bounded, focused in the middle and stronger near the camera',()=>{
-  assert.equal(normalize({}).blur,.4);
+  assert.equal(normalize({}).blur,DEFAULTS.blur);
   assert.equal(normalize({blur:-1}).blur,0);assert.equal(normalize({blur:10}).blur,1);
   for(const blur of [NaN,Infinity,'1',null])assert.equal(normalize({blur}).blur,DEFAULTS.blur);
   for(const depth of [.25,.45,.6,.8,1])assert.equal(blurLevelForDepth(depth,0),0);

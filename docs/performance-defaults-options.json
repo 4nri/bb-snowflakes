@@ -1,0 +1,33 @@
+{
+  "duration": 30000,
+  "scenarios": [
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 120,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 1,
+      "speed": 50,
+      "wind": 12,
+      "sway": 20,
+      "opacity": 0.5,
+      "enabled": true,
+      "area": "hero"
+    },
+    {
+      "mode": "demo-mobile",
+      "rate": 10,
+      "count": 120,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 1,
+      "speed": 50,
+      "wind": 12,
+      "sway": 20,
+      "opacity": 0.5,
+      "enabled": true,
+      "area": "hero"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {DEFAULTS} from '../src/snow.js';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -59,7 +60,7 @@ try{
   await page.locator('#fullscreen').click();
   assert.equal(await page.locator('.workspace').evaluate(el=>el.classList.contains('presentation')),true);
   await page.keyboard.press('Escape');assert.equal(await page.locator('.workspace').evaluate(el=>el.classList.contains('presentation')),false);
-  await page.locator('#count').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#count').inputValue(),'41');
+  await page.locator('#count').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#count').inputValue(),String(DEFAULTS.count+1));
   await page.locator('#reset').click();
   assert.deepEqual(errors,[]);assert.deepEqual(external,[],'No external runtime resources');
   results.push({name,before,editing,nativeFullscreen,errors,external});await context.close();
