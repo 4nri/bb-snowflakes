@@ -1,0 +1,45 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {normalize,DEFAULTS,createParticle,stepParticle} from '../src/snow.js';
+test('external settings cannot exceed the resource budget',()=>{
+  const actual=normalize({count:100000,size:-1,speed:Infinity,wind:-1000,opacity:NaN,shape:'unknown',fps:144,enabled:'false'});
+  assert.equal(actual.count,200);assert.equal(actual.size,0.5);assert.equal(actual.speed,DEFAULTS.speed);assert.equal(actual.wind,-100);assert.equal(actual.opacity,DEFAULTS.opacity);assert.equal(actual.shape,undefined);assert.equal(actual.fps,undefined);assert.equal(actual.enabled,true);
+});
+test('reject malformed settings containers',()=>{for(const input of [null,[],true,'oops'])assert.throws(()=>normalize(input),TypeError);});
+test('zero particles and zero motion remain valid',()=>{const result=normalize({count:0,speed:0,wind:0,sway:0,opacity:0,enabled:false});assert.equal(result.count,0);assert.equal(result.opacity,0);assert.equal(result.speed,0);assert.equal(result.enabled,false);});
+test('particle generation stays inside the viewport',()=>{const p=createParticle(393,852,()=>0.5);assert.equal(p.x,196.5);assert.equal(p.y,426);assert.ok(p.depth>=.35&&p.depth<=1);});
+test('motion over one second matches at 30 and 60 fps',()=>{
+  const a=createParticle(393,852,()=>.2),b={...a};
+  for(let i=0;i<30;i++)stepParticle(a,1/30,DEFAULTS,393,852,i/30);
+  for(let i=0;i<60;i++)stepParticle(b,1/60,DEFAULTS,393,852,i/60);
+  assert.ok(Math.abs(a.x-b.x)<1e-9);assert.ok(Math.abs(a.y-b.y)<1e-9);
+});
+test('particles recycle at bottom and wind boundaries',()=>{
+  const p={x:10000,y:10000,depth:1,phase:0};stepParticle(p,1/60,DEFAULTS,393,852,0);assert.ok(p.x<0);assert.ok(p.y<0);
+});
+test('Snow stops rendering for reduced motion, hidden tabs and destroyed containers',async()=>{
+  const {Snow}=await import('../src/snow.js');
+  const ctx={setTransform(){},clearRect(){},beginPath(){},arc(){},fill(){},translate(){},rotate(){},moveTo(){},lineTo(){},stroke(){},save(){},restore(){},rect(){},clip(){},drawImage(){}};
+  const listeners=new Map();let removed=0,pending=new Map(),sequence=0;
+  globalThis.document={hidden:false,addEventListener:(k,v)=>listeners.set(k,v),removeEventListener:k=>listeners.delete(k),createElement:()=>({style:{},setAttribute(){},getContext:()=>ctx,remove(){removed++;}})};
+  const media={matches:true,addEventListener(){},removeEventListener(){}};
+  globalThis.matchMedia=()=>media;globalThis.devicePixelRatio=3;
+  globalThis.ResizeObserver=class{observe(){}disconnect(){}};
+  let observer;
+  globalThis.IntersectionObserver=class{constructor(callback){observer=callback;}observe(){}disconnect(){}};
+  globalThis.requestAnimationFrame=callback=>{const id=++sequence;pending.set(id,callback);return id;};
+  globalThis.cancelAnimationFrame=id=>pending.delete(id);
+  function flush(time){const callbacks=[...pending.values()];pending.clear();callbacks.forEach(callback=>callback(time));}
+  const container={append(){},getBoundingClientRect:()=>({width:393,height:852})};
+  const snow=new Snow(container);
+  assert.equal(snow.active,false);assert.equal(pending.size,0);
+  snow.play({ignoreReducedMotion:true});assert.equal(snow.active,true);assert.equal(pending.size,1);
+  assert.equal(snow.canvas.width,393,'No Retina buffer even on DPR 3');
+  document.hidden=true;listeners.get('visibilitychange')();flush(100);assert.equal(pending.size,0);
+  document.hidden=false;listeners.get('visibilitychange')();assert.equal(pending.size,1);
+  observer([{isIntersecting:false}]);flush(200);assert.equal(pending.size,0);
+  observer([{isIntersecting:true}]);assert.equal(pending.size,1);
+  snow.pause();flush(300);assert.equal(pending.size,0);
+  snow.play();assert.equal(pending.size,0,'play respects reduced motion again');
+  snow.play({ignoreReducedMotion:true});snow.destroy();assert.equal(pending.size,0);assert.equal(removed,1);assert.equal(listeners.size,0);
+});

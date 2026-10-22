@@ -1,0 +1,9 @@
+{
+  "name": "bb-snowflakes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free canvas snow and Figma comparison playground",
+  "scripts": {"dev": "node scripts/serve.mjs", "test": "node --test", "check": "node --check src/snow.js && node --check src/app.js"},
+  "engines": {"node": ">=20"}
+}
