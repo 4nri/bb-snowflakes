@@ -1,46 +1,77 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#171819"><meta name="description" content="Снег на макетах BetBoom: настройка анимации и конфигурация для разработки.">
-  <title>BetBoom · Snow Lab</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e6eaee">
+  <meta name="description" content="Настройка снега на двух макетах акции «Ёлка желаний» и передача настроек в разработку.">
+  <title>Снег на макетах | BetBoom</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
   <script type="module" src="src/app.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="./" aria-label="Snow Lab, главная"><span class="brand-mark" aria-hidden="true">✳</span><strong>BETBOOM<span> / SNOW LAB</span></strong><span class="version">v1.0</span></a>
-    <div class="top-actions"><a class="source-link" href="https://www.figma.com/design/mZPIQ2poXiuRzyO4JU2nPS/BB---2026?node-id=7596-3042" target="_blank" rel="noreferrer">Макеты в Figma <span aria-hidden="true">↗</span></a><button id="share" class="button">Поделиться <span aria-hidden="true">↗</span></button></div>
+    <a class="brand" href="./" aria-label="BetBoom, главная"><strong>BETBOOM</strong><span>Снег на макетах</span></a>
+    <nav class="top-actions" aria-label="Материалы проекта">
+      <a class="source-link" href="https://www.figma.com/design/mZPIQ2poXiuRzyO4JU2nPS/BB---2026?node-id=7596-3042" target="_blank" rel="noreferrer"><span class="figma-full">Макеты в Figma</span><span class="figma-short">Figma</span></a>
+      <button id="share" class="button" type="button">Поделиться</button>
+    </nav>
   </header>
   <main class="layout">
-    <aside class="panel" aria-label="Настройки снега">
-      <div class="panel-title"><div><span class="eyebrow">АНИМАЦИЯ</span><h1>Настроить снег</h1></div><label class="switch" title="Включить снег"><input id="enabled" type="checkbox" checked aria-label="Снег включён"><span></span></label></div>
-      <p class="panel-intro">Один эффект. Два макета.<br>Все изменения видны сразу.</p>
-      <section class="control-section"><h2>Пресет <span id="custom-label" hidden>изменён</span></h2><div class="presets" role="group" aria-label="Пресеты"><button data-preset="light" aria-pressed="true"><span aria-hidden="true">·</span>Лёгкий</button><button data-preset="snow" aria-pressed="false"><span aria-hidden="true">⁙</span>Снегопад</button><button data-preset="blizzard" aria-pressed="false"><span aria-hidden="true">≋</span>Метель</button></div></section>
-      <section class="control-section parameters"><h2>Частицы</h2>
-        <div class="range-control"><label for="count">Количество <output for="count" id="count-value"></output></label><input id="count" type="range" min="0" max="200" step="1"><div class="range-ends"><span>Редко</span><span>Густо</span></div></div>
-        <div class="range-control"><label for="size">Максимальный размер <output for="size" id="size-value"></output></label><input id="size" type="range" min="0.5" max="6" step="0.5"></div>
-        <div class="range-control"><label for="sizeVariation">Разброс размеров <output for="sizeVariation" id="sizeVariation-value"></output></label><input id="sizeVariation" type="range" min="0" max="1" step="0.05" aria-describedby="depth-hint"><div class="range-ends"><span>Одинаковые</span><span>Разные</span></div><p class="control-hint" id="depth-hint">Мелкие частицы движутся медленнее, крупные быстрее.</p></div>
-        <div class="range-control"><label for="opacity">Непрозрачность <output for="opacity" id="opacity-value"></output></label><input id="opacity" type="range" min="0" max="1" step="0.05"></div>
-      </section>
-      <section class="control-section parameters"><h2>Движение</h2>
-        <div class="range-control"><label for="speed">Скорость падения <output for="speed" id="speed-value"></output></label><input id="speed" type="range" min="0" max="160" step="1"></div>
-        <div class="range-control"><label for="wind">Ветер <output for="wind" id="wind-value"></output></label><input id="wind" type="range" min="-100" max="100" step="1"><div class="range-ends"><span>← Влево</span><span>Вправо →</span></div></div>
-        <div class="range-control"><label for="sway">Покачивание <output for="sway" id="sway-value"></output></label><input id="sway" type="range" min="0" max="60" step="1"></div>
-      </section>
-      <section class="control-section"><h2>Отображение</h2><p class="performance-note">Простые точки, одна заливка на экран. Без текстур и Retina-буфера.</p><label class="select-row" for="area">Область<select id="area"><option value="content">Весь контент</option><option value="hero">Иллюстрация</option></select></label></section>
-      <div class="panel-bottom"><button id="export" class="button primary">Скачать настройки <span aria-hidden="true">↓</span></button><div class="secondary-actions"><button id="import">Загрузить JSON</button><span>·</span><button id="reset">Сбросить</button></div><input id="file" type="file" accept="application/json,.json" hidden><a class="dev-link" href="https://github.com/4nri/bb-snowflakes#интеграция" target="_blank" rel="noreferrer">Разработчикам <span aria-hidden="true">↗</span></a></div>
-    </aside>
-    <section class="workspace" aria-label="Предпросмотр на макетах">
-      <div class="workspace-toolbar"><div class="breadcrumbs">Предпросмотр <span>/</span><strong>Ёлка желаний</strong></div><div class="view-controls"><label for="zoom" class="sr-only">Масштаб макетов</label><select id="zoom"><option value="auto">Вписать</option><option value="0.75">75%</option><option value="1">100%</option></select><button id="fullscreen" class="icon-button" aria-label="Полноэкранный просмотр" title="Полноэкранный просмотр">⛶</button></div></div>
-      <div class="preview-scroll" id="preview-scroll"><div class="screens" id="screens">
-        <figure class="screen-card"><figcaption><span><i>01</i> Стартовая страница</span><span title="В этом макете уже есть статичный снег из Figma">393 × 852 ⓘ</span></figcaption><div class="phone" id="start-screen"><img src="assets/start.png" width="393" height="852" alt="Стартовая страница акции «Ёлка желаний»" fetchpriority="high" draggable="false"></div></figure>
-        <figure class="screen-card"><figcaption><span><i>02</i> Главная страница</span><span>393 × 852</span></figcaption><div class="phone" id="main-screen"><img src="assets/main.png" width="393" height="852" alt="Главная страница акции с ёлкой и желаниями" fetchpriority="high" draggable="false"></div></figure>
-      </div></div>
-      <div class="playback"><button id="pause" class="button play-button"><span aria-hidden="true">Ⅱ</span> Пауза</button><span class="playback-divider"></span><span class="live-dot" id="live-dot"></span><span id="state-label">Снег идёт</span><span class="playback-right">Настройки общие для двух экранов</span></div>
-      <div class="workspace-footer"><span><span class="tiny-snow" aria-hidden="true">✳</span> Canvas 2D <span class="footer-dot">·</span> без зависимостей</span><span id="metrics">80 точек <span class="footer-dot">·</span> 60 FPS</span></div>
-      <div class="motion-notice" id="motion-notice" hidden>В системе включено уменьшение движения. Нажмите «Запустить», чтобы посмотреть анимацию.</div>
+    <section class="workspace" aria-labelledby="project-title">
+      <div class="workspace-toolbar">
+        <h1 id="project-title">Ёлка желаний</h1>
+        <div class="view-controls">
+          <label for="zoom" class="sr-only">Масштаб макетов</label>
+          <select id="zoom"><option value="auto">Вписать</option><option value="0.75">75%</option><option value="1">100%</option></select>
+          <button id="fullscreen" class="button fullscreen-button" type="button" aria-label="На весь экран" title="На весь экран">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg>
+            <span class="fullscreen-text">На весь экран</span>
+          </button>
+        </div>
+      </div>
+      <div class="preview-scroll" id="preview-scroll" tabindex="0" aria-label="Область сравнения макетов">
+        <div class="screens" id="screens">
+          <figure class="screen-card">
+            <figcaption><span class="screen-name"><span class="caption-full">Стартовый экран</span><span class="caption-short">Старт</span></span><span class="screen-note" title="В исходном макете уже есть неподвижный снег"><span class="caption-full">Статичный снег в макете</span><span class="caption-short">Статичный снег</span></span></figcaption>
+            <div class="phone" id="start-screen"><img src="assets/start.png" width="393" height="852" alt="Стартовая страница акции «Ёлка желаний»" fetchpriority="high" draggable="false"></div>
+          </figure>
+          <figure class="screen-card">
+            <figcaption><span class="screen-name"><span class="caption-full">Главная страница</span><span class="caption-short">Главная</span></span><span class="screen-note">393 × 852 px</span></figcaption>
+            <div class="phone" id="main-screen"><img src="assets/main.png" width="393" height="852" alt="Главная страница акции с ёлкой и желаниями" fetchpriority="high" draggable="false"></div>
+          </figure>
+        </div>
+      </div>
+      <div class="playback">
+        <div class="playback-controls"><button id="pause" class="button" type="button">Пауза</button><span class="playback-state"><span class="live-dot" id="live-dot" aria-hidden="true"></span><span id="state-label">Снег идёт</span></span></div>
+        <dl class="metrics" id="metrics" aria-label="Производительность анимации"><div><dt>Частиц</dt><dd id="metric-count">80</dd></div><div><dt>FPS</dt><dd id="metric-fps">0</dd></div><div title="Время расчёта и отправки команд Canvas одного экрана, 95-й процентиль. GPU-время не измеряется."><dt>CPU на экран</dt><dd><span id="metric-cost">0,00</span> мс</dd></div></dl>
+      </div>
+      <p class="motion-notice" id="motion-notice" hidden>В системе включено уменьшение движения. Нажмите «Запустить», чтобы посмотреть снег.</p>
     </section>
+    <aside class="panel" aria-labelledby="settings-title">
+      <div class="panel-title"><h2 id="settings-title">Настройки снега</h2><label class="switch" title="Показывать снег"><input id="enabled" type="checkbox" checked aria-label="Показывать снег"><span></span></label></div>
+      <div class="panel-scroll" tabindex="0" aria-label="Параметры снега">
+        <fieldset class="control-section"><legend>Пресет <span id="custom-label" hidden>изменён</span></legend><div class="presets"><button type="button" data-preset="light" aria-pressed="true">Лёгкий</button><button type="button" data-preset="snow" aria-pressed="false">Снегопад</button><button type="button" data-preset="blizzard" aria-pressed="false">Метель</button></div></fieldset>
+        <fieldset class="control-section parameters"><legend>Частицы</legend>
+          <div class="range-control"><label for="count">Частиц на экран <output for="count" id="count-value"></output></label><input id="count" type="range" min="0" max="200" step="1"></div>
+          <div class="range-control"><label for="size">Максимальный размер <output for="size" id="size-value"></output></label><input id="size" type="range" min="0.5" max="6" step="0.5"></div>
+          <div class="range-control"><label for="sizeVariation">Разброс размеров <output for="sizeVariation" id="sizeVariation-value"></output></label><input id="sizeVariation" type="range" min="0" max="1" step="0.05" aria-describedby="depth-hint"><p class="control-hint" id="depth-hint">Крупные частицы движутся быстрее.</p></div>
+          <div class="range-control"><label for="opacity">Непрозрачность <output for="opacity" id="opacity-value"></output></label><input id="opacity" type="range" min="0" max="1" step="0.05"></div>
+        </fieldset>
+        <fieldset class="control-section parameters"><legend>Движение</legend>
+          <div class="range-control"><label for="speed">Скорость падения <output for="speed" id="speed-value"></output></label><input id="speed" type="range" min="0" max="160" step="1"></div>
+          <div class="range-control"><label for="wind">Ветер <output for="wind" id="wind-value"></output></label><input id="wind" type="range" min="-100" max="100" step="1"><div class="range-ends"><span>Влево</span><span>Вправо</span></div></div>
+          <div class="range-control"><label for="sway">Покачивание <output for="sway" id="sway-value"></output></label><input id="sway" type="range" min="0" max="60" step="1"></div>
+        </fieldset>
+        <div class="control-section"><label class="select-row" for="area">Область снега<select id="area"><option value="content">Весь контент</option><option value="hero">Иллюстрация</option></select></label></div>
+      </div>
+      <div class="panel-bottom">
+        <button id="export" class="button primary" type="button">Скачать настройки</button>
+        <div class="secondary-actions"><button id="import" type="button">Загрузить</button><button id="reset" type="button">Сбросить</button><a href="https://github.com/4nri/bb-snowflakes#интеграция" target="_blank" rel="noreferrer">Интеграция</a></div>
+        <input id="file" type="file" accept="application/json,.json" hidden>
+      </div>
+    </aside>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 </body>

@@ -1,0 +1,877 @@
+{
+  "timestamp": "2026-10-22T12:44:18.688Z",
+  "browser": "156.0.8078.48",
+  "durationMs": 15000,
+  "calibration": [],
+  "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+  "results": [
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 40,
+      "enabled": true,
+      "sizeVariation": 0.8,
+      "actualSettings": {
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "enabled": true
+      },
+      "elapsedMs": 15001.5,
+      "clock": {
+        "frames": 901,
+        "fps": 60.0606606006066,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 16.80000000000291,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 901,
+          "fps": 60.0606606006066,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 901,
+          "fps": 60.0606606006066,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 0.2999999523162842,
+      "callbackWorkMaxMs": 2.6000001430511475,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "dpr": 1
+      },
+      "canvasBuffers": [
+        {
+          "width": 269,
+          "height": 583
+        },
+        {
+          "width": 269,
+          "height": 583
+        }
+      ],
+      "interaction": null,
+      "uiMetrics": "Частиц80FPS60CPU на экран0,10 мс"
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "enabled": true,
+      "size": 6,
+      "sizeVariation": 1,
+      "actualSettings": {
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "enabled": true
+      },
+      "elapsedMs": 15001.399999856949,
+      "clock": {
+        "frames": 901,
+        "fps": 60.061060968215756,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 16.80000000000109,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 901,
+          "fps": 60.061060968215756,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 901,
+          "fps": 60.061060968215756,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 0.9000000953674316,
+      "callbackWorkMaxMs": 2.799999952316284,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "dpr": 1
+      },
+      "canvasBuffers": [
+        {
+          "width": 269,
+          "height": 583
+        },
+        {
+          "width": 269,
+          "height": 583
+        }
+      ],
+      "interaction": null,
+      "uiMetrics": "Частиц400FPS60CPU на экран0,50 мс"
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "enabled": true,
+      "size": 6,
+      "sizeVariation": 1,
+      "interaction": {
+        "control": "sizeVariation",
+        "events": 100,
+        "changes": 10,
+        "min": 0,
+        "max": 1,
+        "work": [
+          {
+            "type": "input",
+            "at": 2354.5,
+            "ms": 2.5999999046325684
+          },
+          {
+            "type": "input",
+            "at": 2455.699999809265,
+            "ms": 1
+          },
+          {
+            "type": "input",
+            "at": 2553.399999856949,
+            "ms": 0.20000004768371582
+          },
+          {
+            "type": "input",
+            "at": 2653.5999999046326,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 2753.5999999046326,
+            "ms": 0.7999999523162842
+          },
+          {
+            "type": "input",
+            "at": 2853.7999999523163,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 2953.199999809265,
+            "ms": 0.20000004768371582
+          },
+          {
+            "type": "input",
+            "at": 3054.0999999046326,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 3154,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "change",
+            "at": 3253.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 3753.899999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 3854.699999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 3953.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 4053.7999999523163,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 4155.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 4253.5,
+            "ms": 0.5
+          },
+          {
+            "type": "input",
+            "at": 4355.5,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 4453.5,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 4553.799999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 4653.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "change",
+            "at": 4754.799999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 5254.899999856949,
+            "ms": 1
+          },
+          {
+            "type": "input",
+            "at": 5353.199999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 5454,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 5553.899999856949,
+            "ms": 0.5
+          },
+          {
+            "type": "input",
+            "at": 5654.5,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 5754,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 5854.399999856949,
+            "ms": 0.9000000953674316
+          },
+          {
+            "type": "input",
+            "at": 5953.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 6053.699999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 6153.799999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "change",
+            "at": 6254.5,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 6753.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 6854.099999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 6953.599999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 7054.699999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 7155.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 7253.899999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 7354.099999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 7454.099999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 7555.199999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 7653.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "change",
+            "at": 7753.799999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 8254.5,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 8353.899999856949,
+            "ms": 0.9000000953674316
+          },
+          {
+            "type": "input",
+            "at": 8455.199999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 8554,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 8653.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 8753.299999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 8853.299999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 8955.599999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 9053.299999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 9156.5,
+            "ms": 0.5
+          },
+          {
+            "type": "change",
+            "at": 9253.199999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 9753.899999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 9854.5,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 9954.199999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 10054.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 10155.299999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 10254.899999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 10354.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 10453.799999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 10553.899999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 10653.799999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "change",
+            "at": 10754,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 11253.199999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 11355.099999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 11454.5,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 11555,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 11653.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 11753.699999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 11855.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 11955,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 12054,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 12154.399999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "change",
+            "at": 12254.799999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 12753.699999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 12854.199999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 12953.899999856949,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 13054,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 13155.799999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 13254.199999809265,
+            "ms": 0.9000000953674316
+          },
+          {
+            "type": "input",
+            "at": 13354.199999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 13454.599999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 13554.099999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 13654.699999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "change",
+            "at": 13755.599999904633,
+            "ms": 0.2999999523162842
+          },
+          {
+            "type": "input",
+            "at": 14253.599999904633,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 14353.699999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 14453.799999952316,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 14555,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 14654.299999952316,
+            "ms": 0.39999985694885254
+          },
+          {
+            "type": "input",
+            "at": 14753.5,
+            "ms": 0.19999980926513672
+          },
+          {
+            "type": "input",
+            "at": 14854.5,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 14953.699999809265,
+            "ms": 0.5
+          },
+          {
+            "type": "input",
+            "at": 15055.5,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 15153.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "change",
+            "at": 15255.299999952316,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 15755.5,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 15854.699999809265,
+            "ms": 0.10000014305114746
+          },
+          {
+            "type": "input",
+            "at": 15953.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 16054.699999809265,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 16155.799999952316,
+            "ms": 0.39999985694885254
+          },
+          {
+            "type": "input",
+            "at": 16254.399999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 16354.899999856949,
+            "ms": 0
+          },
+          {
+            "type": "input",
+            "at": 16454.099999904633,
+            "ms": 0.09999990463256836
+          },
+          {
+            "type": "input",
+            "at": 16555,
+            "ms": 0.39999985694885254
+          },
+          {
+            "type": "input",
+            "at": 16653.5,
+            "ms": 0
+          },
+          {
+            "type": "change",
+            "at": 16753.5,
+            "ms": 0.5
+          },
+          {
+            "type": "input",
+            "at": 17255.199999809265,
+            "ms": 0.10000014305114746
+          }
+        ]
+      },
+      "control": "sizeVariation",
+      "actualSettings": {
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "enabled": true
+      },
+      "elapsedMs": 15002.100000143051,
+      "clock": {
+        "frames": 900,
+        "fps": 59.99160117526334,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.800000000000182,
+        "maxMs": 16.80000000000291,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 900,
+          "fps": 59.99160117526334,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 900,
+          "fps": 59.99160117526334,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 0.7999999523162842,
+      "callbackWorkMaxMs": 2.799999952316284,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "dpr": 1
+      },
+      "canvasBuffers": [
+        {
+          "width": 269,
+          "height": 583
+        },
+        {
+          "width": 269,
+          "height": 583
+        }
+      ],
+      "uiMetrics": "Частиц400FPS60CPU на экран0,40 мс"
+    },
+    {
+      "mode": "demo-mobile",
+      "rate": 10,
+      "count": 40,
+      "enabled": true,
+      "sizeVariation": 0.8,
+      "actualSettings": {
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "enabled": true
+      },
+      "elapsedMs": 15000.100000143051,
+      "clock": {
+        "frames": 900,
+        "fps": 59.99960000209445,
+        "minRolling1sFps": 60,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "p99Ms": 16.800000000000182,
+        "maxMs": 16.80000000000109,
+        "gapsOver25ms": 0,
+        "gapsOver50ms": 0,
+        "gapDetails": []
+      },
+      "canvases": {
+        "start-screen": {
+          "frames": 900,
+          "fps": 59.99960000209445,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "main-screen": {
+          "frames": 900,
+          "fps": 59.99960000209445,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        }
+      },
+      "callbackWorkP95Ms": 0.5,
+      "callbackWorkMaxMs": 2.5,
+      "longTasks": [],
+      "skippedCallbacks": [],
+      "visibility": "visible",
+      "viewport": {
+        "width": 393,
+        "height": 852,
+        "dpr": 3
+      },
+      "canvasBuffers": [
+        {
+          "width": 134,
+          "height": 291
+        },
+        {
+          "width": 134,
+          "height": 291
+        }
+      ],
+      "interaction": null,
+      "uiMetrics": "Частиц80FPS60CPU на экран0,50 мс"
+    }
+  ],
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M2 Ultra"
+  },
+  "sources": {
+    "src/snow.js": "70bb86e349114682cb9a6418b0518b3770694358c77306b5eaf0597da8dba1ce",
+    "src/app.js": "80abda49151f7d5003f83850a0de5a3471c7db86695775e5db6bbebedad397ec",
+    "styles.css": "435f4f0bfa26f0aa93284d0ea826fd822382c9dd472339c23dc2192fa034ba3d",
+    "index.html": "b11dffc7112e8d6eabd65ae30bd960ca90b571b1914ae08d035465a964ead6f0"
+  }
+}

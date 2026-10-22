@@ -10,7 +10,8 @@
     "check": "node --check src/snow.js && node --check src/app.js",
     "perf": "node scripts/benchmark.mjs",
     "compare:legacy": "node scripts/compare-legacy.mjs",
-    "smoke:parallax": "node scripts/smoke-parallax.mjs"
+    "smoke:parallax": "node scripts/smoke-parallax.mjs",
+    "smoke:design": "node scripts/smoke-design.mjs"
   },
   "engines": {
     "node": ">=20"

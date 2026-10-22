@@ -1,0 +1,9 @@
+{
+  "duration":15000,
+  "scenarios":[
+    {"mode":"demo-desktop","rate":10,"count":40,"enabled":true,"sizeVariation":0.8},
+    {"mode":"demo-desktop","rate":10,"count":200,"enabled":true,"size":6,"sizeVariation":1},
+    {"mode":"demo-desktop","rate":10,"count":200,"enabled":true,"size":6,"sizeVariation":1,"interaction":"bursts","control":"sizeVariation"},
+    {"mode":"demo-mobile","rate":10,"count":40,"enabled":true,"sizeVariation":0.8}
+  ]
+}

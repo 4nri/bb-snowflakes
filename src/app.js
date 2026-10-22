@@ -46,15 +46,12 @@ function sync() {
   $('enabled').checked=settings.enabled;$('area').value=area;
   document.querySelectorAll('[data-preset]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.preset===preset)));
   $('custom-label').hidden=!!preset;
-  document.querySelectorAll('.parameters').forEach(el=>el.classList.toggle('dimmed',!settings.enabled));
   effects.forEach(e=>e.update(settings));updateClips();
   updatePlayback();persist();
 }
 function updatePlayback() {
   const button=$('pause');
-  button.replaceChildren();
-  const icon=document.createElement('span');icon.setAttribute('aria-hidden','true');icon.textContent=paused?'▶':'Ⅱ';
-  button.append(icon,paused?' Запустить':' Пауза');
+  button.textContent=paused?'Запустить':'Пауза';
   button.disabled=!settings.enabled||settings.count===0;
   $('state-label').textContent=!settings.enabled?'Снег выключен':settings.count===0?'Нет частиц':paused?'На паузе':'Снег идёт';
   $('live-dot').classList.toggle('idle',paused||!settings.enabled||settings.count===0);
@@ -62,7 +59,7 @@ function updatePlayback() {
   effects.forEach(e=>paused?e.pause():e.play({ignoreReducedMotion:true}));
   updateMetrics();
 }
-function updateMetrics(){const fps=effects.find(e=>e.active)?.measuredFps||0;const sorted=[...renderSamples].sort((a,b)=>a-b);const p95=sorted[Math.floor(sorted.length*.95)]||0;$('metrics').textContent=`${settings.enabled?settings.count*2:0} точек · ${fps} FPS · ${p95.toFixed(2)} мс`;$('metrics').title='Время расчёта и отрисовки одного экрана, 95-й процентиль. Частота зависит от устройства и браузера.';}
+function updateMetrics(){const fps=effects.find(e=>e.active)?.measuredFps||0;const sorted=[...renderSamples].sort((a,b)=>a-b);const p95=sorted[Math.floor(sorted.length*.95)]||0;$('metric-count').textContent=String(settings.enabled?settings.count*2:0);$('metric-fps').textContent=String(fps);$('metric-cost').textContent=p95.toFixed(2).replace('.',',');}
 for(const key of ranges) $(key).addEventListener('input',()=>{
   const value=ranges.includes(key)?Number($(key).value):$(key).value;
   settings=normalize({...settings,[key]:value});
@@ -98,10 +95,14 @@ $('share').addEventListener('click',async()=>{
 });
 function fit() {
   const scroll=$('preview-scroll');const zoom=$('zoom').value;
-  const availableHeight=Math.max(300,scroll.clientHeight-61);
-  const narrow=innerWidth<=700;
-  const availableWidth=narrow?Math.min(330,scroll.clientWidth-54):Math.max(210,(scroll.clientWidth-104)/2);
-  const width=zoom==='auto'?Math.max(160,Math.min(393,availableWidth,availableHeight*393/852)):393*Number(zoom);
+  const style=getComputedStyle(scroll),screens=$('screens');
+  const horizontalPadding=parseFloat(style.paddingLeft)+parseFloat(style.paddingRight);
+  const verticalPadding=parseFloat(style.paddingTop)+parseFloat(style.paddingBottom);
+  const cardStyle=getComputedStyle(document.querySelector('.screen-card'));
+  const captionHeight=Math.max(...[...document.querySelectorAll('.screen-card figcaption')].map(el=>el.getBoundingClientRect().height));
+  const availableHeight=Math.max(100,scroll.clientHeight-verticalPadding-captionHeight-parseFloat(cardStyle.rowGap));
+  const availableWidth=Math.max(80,(scroll.clientWidth-horizontalPadding-parseFloat(getComputedStyle(screens).columnGap))/2);
+  const width=zoom==='auto'?Math.floor(Math.max(80,Math.min(393,availableWidth,availableHeight*393/852))):393*Number(zoom);
   document.documentElement.style.setProperty('--screen-width',`${width}px`);
 }
 $('zoom').addEventListener('change',fit);
@@ -113,10 +114,11 @@ $('fullscreen').addEventListener('click',async()=>{
   catch{workspace.classList.toggle('presentation');}
   updateFullscreen();
 });
-function updateFullscreen(){const expanded=!!document.fullscreenElement||document.querySelector('.workspace').classList.contains('presentation');$('fullscreen').setAttribute('aria-label',expanded?'Выйти из полноэкранного просмотра':'Полноэкранный просмотр');$('fullscreen').title=$('fullscreen').getAttribute('aria-label');fit();}
+function updateFullscreen(){const expanded=!!document.fullscreenElement||document.querySelector('.workspace').classList.contains('presentation');$('fullscreen').setAttribute('aria-label',expanded?'Выйти из полноэкранного просмотра':'На весь экран');$('fullscreen').title=$('fullscreen').getAttribute('aria-label');document.querySelector('.fullscreen-text').textContent=expanded?'Свернуть':'На весь экран';fit();}
 document.addEventListener('fullscreenchange',updateFullscreen);
 window.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('.workspace').classList.remove('presentation');updateFullscreen();}});
 for(const img of document.querySelectorAll('.phone img')) img.addEventListener('error',()=>notify('Макет не загрузился. Обновите страницу.'));
 sync();fit();
+document.fonts.ready.then(fit);
 // Diagnostics update once per second, independently of animation render rate.
 setInterval(()=>{if(!document.hidden)updateMetrics();},1000);

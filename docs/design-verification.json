@@ -1,0 +1,593 @@
+{
+  "before": {
+    "desktop": {
+      "panelHeight": 924,
+      "panelContentHeight": 1177,
+      "exportBox": {
+        "x": 24,
+        "y": 1128.78125,
+        "width": 251,
+        "height": 37,
+        "top": 1128.78125,
+        "right": 275,
+        "bottom": 1165.78125,
+        "left": 24
+      },
+      "rangeHeight": 3,
+      "endsColor": "rgb(126, 132, 124)",
+      "panelBackground": "rgb(32, 33, 34)",
+      "captionColor": "rgb(119, 129, 111)",
+      "canvasBackground": "rgb(25, 27, 28)"
+    },
+    "mobile": {
+      "scrollY": 925,
+      "preview": {
+        "x": 304.453125,
+        "y": -761,
+        "width": 262.453125,
+        "height": 568.96875,
+        "top": -761,
+        "right": 566.90625,
+        "bottom": -192.03125,
+        "left": 304.453125
+      },
+      "control": {
+        "x": 24,
+        "y": 424.78125,
+        "width": 345,
+        "height": 3,
+        "top": 424.78125,
+        "right": 369,
+        "bottom": 427.78125,
+        "left": 24
+      },
+      "viewport": {
+        "width": 393,
+        "height": 852
+      }
+    }
+  },
+  "after": {
+    "results": [
+      {
+        "name": "wide",
+        "before": {
+          "export": {
+            "x": 1131,
+            "y": 907,
+            "width": 287,
+            "height": 42,
+            "top": 907,
+            "right": 1418,
+            "bottom": 949,
+            "left": 1131
+          },
+          "pause": {
+            "x": 28,
+            "y": 939.5,
+            "width": 105,
+            "height": 38,
+            "top": 939.5,
+            "right": 133,
+            "bottom": 977.5,
+            "left": 28
+          },
+          "preview": {
+            "x": 0,
+            "y": 144,
+            "width": 1108,
+            "height": 772,
+            "top": 144,
+            "right": 1108,
+            "bottom": 916,
+            "left": 0
+          },
+          "phones": [
+            {
+              "x": 219,
+              "y": 208,
+              "width": 315,
+              "height": 682.890625,
+              "top": 208,
+              "right": 534,
+              "bottom": 890.890625,
+              "left": 219
+            },
+            {
+              "x": 574,
+              "y": 208,
+              "width": 315,
+              "height": 682.890625,
+              "top": 208,
+              "right": 889,
+              "bottom": 890.890625,
+              "left": 574
+            }
+          ],
+          "captions": [
+            {
+              "x": 219,
+              "y": 144,
+              "width": 315,
+              "height": 52,
+              "top": 144,
+              "right": 534,
+              "bottom": 196,
+              "left": 219
+            },
+            {
+              "x": 574,
+              "y": 144,
+              "width": 315,
+              "height": 52,
+              "top": 144,
+              "right": 889,
+              "bottom": 196,
+              "left": 574
+            }
+          ],
+          "slider": {
+            "x": 1131,
+            "y": 390,
+            "width": 287,
+            "height": 28,
+            "top": 390,
+            "right": 1418,
+            "bottom": 418,
+            "left": 1131
+          },
+          "window": {
+            "width": 1440,
+            "height": 1000
+          },
+          "font": true,
+          "scrollWidth": 1440
+        },
+        "editing": {
+          "scrollY": 0,
+          "slider": {
+            "x": 1131,
+            "y": 390,
+            "width": 287,
+            "height": 28,
+            "top": 390,
+            "right": 1418,
+            "bottom": 418,
+            "left": 1131
+          },
+          "phones": [
+            {
+              "x": 219,
+              "y": 208,
+              "width": 315,
+              "height": 682.890625,
+              "top": 208,
+              "right": 534,
+              "bottom": 890.890625,
+              "left": 219
+            },
+            {
+              "x": 574,
+              "y": 208,
+              "width": 315,
+              "height": 682.890625,
+              "top": 208,
+              "right": 889,
+              "bottom": 890.890625,
+              "left": 574
+            }
+          ]
+        },
+        "nativeFullscreen": null,
+        "errors": [],
+        "external": []
+      },
+      {
+        "name": "desktop",
+        "before": {
+          "export": {
+            "x": 971,
+            "y": 707,
+            "width": 287,
+            "height": 42,
+            "top": 707,
+            "right": 1258,
+            "bottom": 749,
+            "left": 971
+          },
+          "pause": {
+            "x": 28,
+            "y": 739.5,
+            "width": 105,
+            "height": 38,
+            "top": 739.5,
+            "right": 133,
+            "bottom": 777.5,
+            "left": 28
+          },
+          "preview": {
+            "x": 0,
+            "y": 144,
+            "width": 948,
+            "height": 572,
+            "top": 144,
+            "right": 948,
+            "bottom": 716,
+            "left": 0
+          },
+          "phones": [
+            {
+              "x": 231,
+              "y": 208,
+              "width": 223,
+              "height": 483.4375,
+              "top": 208,
+              "right": 454,
+              "bottom": 691.4375,
+              "left": 231
+            },
+            {
+              "x": 494,
+              "y": 208,
+              "width": 223,
+              "height": 483.4375,
+              "top": 208,
+              "right": 717,
+              "bottom": 691.4375,
+              "left": 494
+            }
+          ],
+          "captions": [
+            {
+              "x": 231,
+              "y": 144,
+              "width": 223,
+              "height": 52,
+              "top": 144,
+              "right": 454,
+              "bottom": 196,
+              "left": 231
+            },
+            {
+              "x": 494,
+              "y": 144,
+              "width": 223,
+              "height": 52,
+              "top": 144,
+              "right": 717,
+              "bottom": 196,
+              "left": 494
+            }
+          ],
+          "slider": {
+            "x": 971,
+            "y": 390,
+            "width": 287,
+            "height": 28,
+            "top": 390,
+            "right": 1258,
+            "bottom": 418,
+            "left": 971
+          },
+          "window": {
+            "width": 1280,
+            "height": 800
+          },
+          "font": true,
+          "scrollWidth": 1280
+        },
+        "editing": {
+          "scrollY": 0,
+          "slider": {
+            "x": 971,
+            "y": 390,
+            "width": 287,
+            "height": 28,
+            "top": 390,
+            "right": 1258,
+            "bottom": 418,
+            "left": 971
+          },
+          "phones": [
+            {
+              "x": 231,
+              "y": 208,
+              "width": 223,
+              "height": 483.4375,
+              "top": 208,
+              "right": 454,
+              "bottom": 691.4375,
+              "left": 231
+            },
+            {
+              "x": 494,
+              "y": 208,
+              "width": 223,
+              "height": 483.4375,
+              "top": 208,
+              "right": 717,
+              "bottom": 691.4375,
+              "left": 494
+            }
+          ]
+        },
+        "nativeFullscreen": true,
+        "errors": [],
+        "external": []
+      },
+      {
+        "name": "mobile",
+        "before": {
+          "export": {
+            "x": 20,
+            "y": 774.984375,
+            "width": 353,
+            "height": 38,
+            "top": 774.984375,
+            "right": 373,
+            "bottom": 812.984375,
+            "left": 20
+          },
+          "pause": {
+            "x": 16,
+            "y": 485.09375,
+            "width": 86,
+            "height": 34,
+            "top": 485.09375,
+            "right": 102,
+            "bottom": 519.09375,
+            "left": 16
+          },
+          "preview": {
+            "x": 0,
+            "y": 113,
+            "width": 393,
+            "height": 356.59375,
+            "top": 113,
+            "right": 393,
+            "bottom": 469.59375,
+            "left": 0
+          },
+          "phones": [
+            {
+              "x": 52.5,
+              "y": 165,
+              "width": 134,
+              "height": 290.5,
+              "top": 165,
+              "right": 186.5,
+              "bottom": 455.5,
+              "left": 52.5
+            },
+            {
+              "x": 206.5,
+              "y": 165,
+              "width": 134,
+              "height": 290.5,
+              "top": 165,
+              "right": 340.5,
+              "bottom": 455.5,
+              "left": 206.5
+            }
+          ],
+          "captions": [
+            {
+              "x": 52.5,
+              "y": 113,
+              "width": 134,
+              "height": 44,
+              "top": 113,
+              "right": 186.5,
+              "bottom": 157,
+              "left": 52.5
+            },
+            {
+              "x": 206.5,
+              "y": 113,
+              "width": 134,
+              "height": 44,
+              "top": 113,
+              "right": 340.5,
+              "bottom": 157,
+              "left": 206.5
+            }
+          ],
+          "slider": {
+            "x": 20,
+            "y": 843.59375,
+            "width": 353,
+            "height": 32,
+            "top": 843.59375,
+            "right": 373,
+            "bottom": 875.59375,
+            "left": 20
+          },
+          "window": {
+            "width": 393,
+            "height": 852
+          },
+          "font": true,
+          "scrollWidth": 393
+        },
+        "editing": {
+          "scrollY": 0,
+          "slider": {
+            "x": 20,
+            "y": 657.59375,
+            "width": 353,
+            "height": 32,
+            "top": 657.59375,
+            "right": 373,
+            "bottom": 689.59375,
+            "left": 20
+          },
+          "phones": [
+            {
+              "x": 52.5,
+              "y": 165,
+              "width": 134,
+              "height": 290.5,
+              "top": 165,
+              "right": 186.5,
+              "bottom": 455.5,
+              "left": 52.5
+            },
+            {
+              "x": 206.5,
+              "y": 165,
+              "width": 134,
+              "height": 290.5,
+              "top": 165,
+              "right": 340.5,
+              "bottom": 455.5,
+              "left": 206.5
+            }
+          ]
+        },
+        "nativeFullscreen": null,
+        "errors": [],
+        "external": []
+      },
+      {
+        "name": "small",
+        "before": {
+          "export": {
+            "x": 20,
+            "y": 663,
+            "width": 320,
+            "height": 38,
+            "top": 663,
+            "right": 340,
+            "bottom": 701,
+            "left": 20
+          },
+          "pause": {
+            "x": 16,
+            "y": 417.890625,
+            "width": 86,
+            "height": 34,
+            "top": 417.890625,
+            "right": 102,
+            "bottom": 451.890625,
+            "left": 16
+          },
+          "preview": {
+            "x": 0,
+            "y": 113,
+            "width": 360,
+            "height": 289.390625,
+            "top": 113,
+            "right": 360,
+            "bottom": 402.390625,
+            "left": 0
+          },
+          "phones": [
+            {
+              "x": 68,
+              "y": 165,
+              "width": 102,
+              "height": 221.125,
+              "top": 165,
+              "right": 170,
+              "bottom": 386.125,
+              "left": 68
+            },
+            {
+              "x": 190,
+              "y": 165,
+              "width": 102,
+              "height": 221.125,
+              "top": 165,
+              "right": 292,
+              "bottom": 386.125,
+              "left": 190
+            }
+          ],
+          "captions": [
+            {
+              "x": 68,
+              "y": 113,
+              "width": 102,
+              "height": 44,
+              "top": 113,
+              "right": 170,
+              "bottom": 157,
+              "left": 68
+            },
+            {
+              "x": 190,
+              "y": 113,
+              "width": 102,
+              "height": 44,
+              "top": 113,
+              "right": 292,
+              "bottom": 157,
+              "left": 190
+            }
+          ],
+          "slider": {
+            "x": 20,
+            "y": 776.390625,
+            "width": 320,
+            "height": 32,
+            "top": 776.390625,
+            "right": 340,
+            "bottom": 808.390625,
+            "left": 20
+          },
+          "window": {
+            "width": 360,
+            "height": 740
+          },
+          "font": true,
+          "scrollWidth": 360
+        },
+        "editing": {
+          "scrollY": 0,
+          "slider": {
+            "x": 20,
+            "y": 567.390625,
+            "width": 320,
+            "height": 32,
+            "top": 567.390625,
+            "right": 340,
+            "bottom": 599.390625,
+            "left": 20
+          },
+          "phones": [
+            {
+              "x": 68,
+              "y": 165,
+              "width": 102,
+              "height": 221.125,
+              "top": 165,
+              "right": 170,
+              "bottom": 386.125,
+              "left": 68
+            },
+            {
+              "x": 190,
+              "y": 165,
+              "width": 102,
+              "height": 221.125,
+              "top": 165,
+              "right": 292,
+              "bottom": 386.125,
+              "left": 190
+            }
+          ]
+        },
+        "nativeFullscreen": null,
+        "errors": [],
+        "external": []
+      }
+    ],
+    "reducedMotion": true
+  },
+  "sources": {
+    "src/snow.js": "70bb86e349114682cb9a6418b0518b3770694358c77306b5eaf0597da8dba1ce",
+    "src/app.js": "80abda49151f7d5003f83850a0de5a3471c7db86695775e5db6bbebedad397ec",
+    "styles.css": "435f4f0bfa26f0aa93284d0ea826fd822382c9dd472339c23dc2192fa034ba3d",
+    "index.html": "b11dffc7112e8d6eabd65ae30bd960ca90b571b1914ae08d035465a964ead6f0"
+  }
+}
