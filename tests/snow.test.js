@@ -6,6 +6,12 @@ test('external settings cannot exceed the resource budget',()=>{
   assert.equal(actual.count,200);assert.equal(actual.size,0.5);assert.equal(actual.speed,DEFAULTS.speed);assert.equal(actual.wind,-100);assert.equal(actual.opacity,DEFAULTS.opacity);assert.equal(actual.shape,undefined);assert.equal(actual.fps,undefined);assert.equal(actual.enabled,true);
 });
 test('reject malformed settings containers',()=>{for(const input of [null,[],true,'oops'])assert.throws(()=>normalize(input),TypeError);});
+test('size variation accepts old settings and clamps untrusted values',()=>{
+  assert.equal(normalize({size:3}).sizeVariation,DEFAULTS.sizeVariation);
+  assert.equal(normalize({sizeVariation:-1}).sizeVariation,0);
+  assert.equal(normalize({sizeVariation:10}).sizeVariation,1);
+  for(const value of [NaN,Infinity,'1',null])assert.equal(normalize({sizeVariation:value}).sizeVariation,DEFAULTS.sizeVariation);
+});
 test('zero particles and zero motion remain valid',()=>{const result=normalize({count:0,speed:0,wind:0,sway:0,opacity:0,enabled:false});assert.equal(result.count,0);assert.equal(result.opacity,0);assert.equal(result.speed,0);assert.equal(result.enabled,false);});
 test('particle generation stays inside the viewport',()=>{const p=createParticle(393,852,()=>0.5);assert.equal(p.x,196.5);assert.equal(p.y,426);assert.ok(p.depth>=.35&&p.depth<=1);});
 test('motion over one second matches at 30 and 60 fps',()=>{
@@ -14,12 +20,23 @@ test('motion over one second matches at 30 and 60 fps',()=>{
   for(let i=0;i<60;i++)stepParticle(b,1/60,DEFAULTS,393,852,i/60);
   assert.ok(Math.abs(a.x-b.x)<1e-9);assert.ok(Math.abs(a.y-b.y)<1e-9);
 });
+test('large near particles move four times faster at full variation; zero variation is uniform',()=>{
+  for(const variation of [0,1]){
+    const far=createParticle(393,852,()=>0,variation),near=createParticle(393,852,()=>1,variation);
+    for(const p of [far,near]){p.x=100;p.y=100;stepParticle(p,1,DEFAULTS,393,852,1);}
+    const ratio=variation===1?4:1;
+    assert.equal((near.y-100)/(far.y-100),ratio);
+    assert.equal((near.x-100)/(far.x-100),ratio);
+    assert.equal(near.depth/far.depth,ratio);
+  }
+});
 test('particles recycle at bottom and wind boundaries',()=>{
   const p={x:10000,y:10000,depth:1,phase:0};stepParticle(p,1/60,DEFAULTS,393,852,0);assert.ok(p.x<0);assert.ok(p.y<0);
 });
 test('Snow stops rendering for reduced motion, hidden tabs and destroyed containers',async()=>{
   const {Snow}=await import('../src/snow.js');
-  const ctx={setTransform(){},clearRect(){},beginPath(){},arc(){},fill(){},translate(){},rotate(){},moveTo(){},lineTo(){},stroke(){},save(){},restore(){},rect(){},clip(){},drawImage(){}};
+  const radii=[];let fills=0;
+  const ctx={setTransform(){},clearRect(){radii.length=0;fills=0;},beginPath(){},arc(x,y,radius){radii.push(radius);},fill(){fills++;},translate(){},rotate(){},moveTo(){},lineTo(){},stroke(){},save(){},restore(){},rect(){},clip(){},drawImage(){}};
   const listeners=new Map();let removed=0,pending=new Map(),sequence=0;
   globalThis.document={hidden:false,addEventListener:(k,v)=>listeners.set(k,v),removeEventListener:k=>listeners.delete(k),createElement:()=>({style:{},setAttribute(){},getContext:()=>ctx,remove(){removed++;}})};
   const media={matches:true,addEventListener(){},removeEventListener(){}};
@@ -31,8 +48,18 @@ test('Snow stops rendering for reduced motion, hidden tabs and destroyed contain
   globalThis.cancelAnimationFrame=id=>pending.delete(id);
   function flush(time){const callbacks=[...pending.values()];pending.clear();callbacks.forEach(callback=>callback(time));}
   const container={append(){},getBoundingClientRect:()=>({width:393,height:852})};
-  const snow=new Snow(container);
+  const snow=new Snow(container,{count:2,size:4,sizeVariation:1,sway:0});
   assert.equal(snow.active,false);assert.equal(pending.size,0);
+  const particles=[...snow.particles];particles[0].baseDepth=.25;particles[1].baseDepth=1;
+  const positions=particles.map(p=>[p.x,p.y,p.phase,p.baseDepth]);
+  snow.update({sizeVariation:0});assert.deepEqual(radii,[4,4]);assert.equal(fills,1,'Still one fill for every point');
+  snow.update({sizeVariation:1});assert.deepEqual(radii,[1,4]);
+  snow.update({sizeVariation:.5});assert.deepEqual(radii,[2.5,4]);
+  snow.update({sizeVariation:1});assert.deepEqual(radii,[1,4],'Stable distribution after changing back');
+  assert.ok(particles.every((p,i)=>p===snow.particles[i]),'Slider keeps existing particle objects');
+  assert.deepEqual(particles.map(p=>[p.x,p.y,p.phase,p.baseDepth]),positions,'No random resets or position jumps');
+  snow.update({sizeVariation:0,count:3});assert.equal(snow.particles[2].depth,1,'New particles use current variation');
+  snow.update({count:2,sizeVariation:1});
   snow.play({ignoreReducedMotion:true});assert.equal(snow.active,true);assert.equal(pending.size,1);
   assert.equal(snow.canvas.width,393,'No Retina buffer even on DPR 3');
   const draw=snow.draw.bind(snow);let immediateDraws=0;snow.draw=()=>{immediateDraws++;draw();};

@@ -1,0 +1,8 @@
+{
+  "duration":30000,
+  "scenarios":[
+    {"mode":"demo-desktop","rate":10,"count":200,"enabled":true,"size":6,"sizeVariation":1,"interaction":"bursts","control":"sizeVariation","repeat":1},
+    {"mode":"demo-desktop","rate":10,"count":200,"enabled":true,"size":6,"sizeVariation":1,"interaction":"bursts","control":"sizeVariation","repeat":2},
+    {"mode":"demo-desktop","rate":10,"count":200,"enabled":true,"size":6,"sizeVariation":1,"interaction":"bursts","control":"wind"}
+  ]
+}

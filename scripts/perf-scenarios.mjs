@@ -48,23 +48,23 @@ export default async function runScenarios(page, options={}) {
     await page.setViewportSize(mobile?{width:393,height:852}:{width:1280,height:900});
     await cdp.send('Emulation.setDeviceMetricsOverride',{width:mobile?393:1280,height:mobile?852:900,deviceScaleFactor:mobile?3:1,mobile});
     await cdp.send('Emulation.setCPUThrottlingRate',{rate:scenario.rate});
-    const settings={count:scenario.count,size:2,speed:scenario.count===110?85:28,wind:scenario.count===110?60:6,sway:10,opacity:.65,enabled:scenario.enabled};
-    const url=scenario.mode==='module-mobile'?BASE+'/tests/fixtures/snow-perf.html?count='+scenario.count+'&enabled='+scenario.enabled+'&speed='+settings.speed+'&wind='+settings.wind+'&sway='+settings.sway:BASE+'/#'+new URLSearchParams({snow:JSON.stringify({version:1,settings,area:'content'})});
+    const settings={count:scenario.count,size:scenario.size??2,sizeVariation:scenario.sizeVariation??.8,speed:scenario.count===110?85:28,wind:scenario.count===110?60:6,sway:10,opacity:.65,enabled:scenario.enabled};
+    const url=scenario.mode==='module-mobile'?BASE+'/tests/fixtures/snow-perf.html?'+new URLSearchParams(settings):BASE+'/#'+new URLSearchParams({snow:JSON.stringify({version:1,settings,area:'content'})});
     await page.goto('about:blank');
     await page.goto(url);
     await page.locator('canvas').first().waitFor();
     await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));
-    const actual=await page.evaluate(()=>window.effect?{...window.effect.settings}:{count:Number(document.querySelector('#count').value),enabled:document.querySelector('#enabled').checked});
-    if(actual.count!==scenario.count||actual.enabled!==scenario.enabled)throw new Error('Scenario did not apply: '+JSON.stringify({scenario,actual}));
+    const actual=await page.evaluate(()=>window.effect?{...window.effect.settings}:{count:Number(document.querySelector('#count').value),size:Number(document.querySelector('#size').value),sizeVariation:Number(document.querySelector('#sizeVariation').value),enabled:document.querySelector('#enabled').checked});
+    if(actual.count!==scenario.count||actual.enabled!==scenario.enabled||actual.size!==settings.size||actual.sizeVariation!==settings.sizeVariation)throw new Error('Scenario did not apply: '+JSON.stringify({scenario,actual}));
     await page.waitForTimeout(2000);
-    const measured=await page.evaluate(async ({duration,interaction})=>{
+    const measured=await page.evaluate(async ({duration,interaction,control})=>{
       window.__bench={clock:[],draws:{},work:[],longTasks:[],skipped:[],drawCalls:0};
-      let wasDragging=false;const inputStart=performance.now();
+      let wasDragging=false,changes=0;const inputValues=[],inputWork=[],inputStart=performance.now();
       const inputTimer=interaction?setInterval(()=>{
-        const input=document.querySelector('#wind');if(!input)return;
+        const input=document.getElementById(control);if(!input)return;
         const dragging=interaction!=='bursts'||(performance.now()-inputStart)%1500<1000;
-        if(dragging){input.value=String(Math.round(100*Math.sin(performance.now()/500)));input.dispatchEvent(new Event('input',{bubbles:true}));}
-        else if(wasDragging)input.dispatchEvent(new Event('change',{bubbles:true}));
+        if(dragging){const min=Number(input.min),max=Number(input.max),step=Number(input.step);input.value=String(min+Math.round((max-min)*(.5+.5*Math.sin(performance.now()/500))/step)*step);const at=performance.now();input.dispatchEvent(new Event('input',{bubbles:true}));inputWork.push({type:'input',at,ms:performance.now()-at});inputValues.push(Number(input.value));}
+        else if(wasDragging){const at=performance.now();input.dispatchEvent(new Event('change',{bubbles:true}));inputWork.push({type:'change',at,ms:performance.now()-at});changes++;}
         wasDragging=dragging;
       },100):null;
       const start=performance.now();await new Promise(resolve=>setTimeout(resolve,duration));
@@ -75,11 +75,11 @@ export default async function runScenarios(page, options={}) {
         const sorted=[...intervals].sort((a,b)=>a-b);
         const percentile=p=>sorted[Math.min(sorted.length-1,Math.floor(sorted.length*p))]||0;
         let minFps=Infinity;for(let t=start;t+1000<=start+elapsed;t+=100)minFps=Math.min(minFps,times.filter(v=>v>=t&&v<t+1000).length);
-        return {frames:times.length,fps:times.length*1000/elapsed,minRolling1sFps:Number.isFinite(minFps)?minFps:0,p50Ms:percentile(.5),p95Ms:percentile(.95),p99Ms:percentile(.99),maxMs:sorted.at(-1)||0,gapsOver25ms:intervals.filter(v=>v>25).length,gapsOver50ms:intervals.filter(v=>v>50).length};
+        return {frames:times.length,fps:times.length*1000/elapsed,minRolling1sFps:Number.isFinite(minFps)?minFps:0,p50Ms:percentile(.5),p95Ms:percentile(.95),p99Ms:percentile(.99),maxMs:sorted.at(-1)||0,gapsOver25ms:intervals.filter(v=>v>25).length,gapsOver50ms:intervals.filter(v=>v>50).length,gapDetails:times.slice(1).flatMap((t,i)=>t-times[i]>25?[{at:t,intervalMs:t-times[i]}]:[])};
       }
       const work=[...b.work].sort((a,b)=>a-b);
-      return {elapsedMs:elapsed,clock:stats(b.clock),canvases:Object.fromEntries(Object.entries(b.draws).map(([id,times])=>[id,stats(times)])),callbackWorkP95Ms:work[Math.floor(work.length*.95)]||0,callbackWorkMaxMs:work.at(-1)||0,longTasks:b.longTasks,skippedCallbacks:b.skipped,visibility:document.visibilityState,viewport:{width:innerWidth,height:innerHeight,dpr:devicePixelRatio},canvasBuffers:[...document.querySelectorAll('canvas')].map(c=>({width:c.width,height:c.height})),uiMetrics:document.querySelector('#metrics')?.textContent};
-    },{duration,interaction:scenario.interaction||false});
+      return {elapsedMs:elapsed,clock:stats(b.clock),canvases:Object.fromEntries(Object.entries(b.draws).map(([id,times])=>[id,stats(times)])),callbackWorkP95Ms:work[Math.floor(work.length*.95)]||0,callbackWorkMaxMs:work.at(-1)||0,longTasks:b.longTasks,skippedCallbacks:b.skipped,visibility:document.visibilityState,viewport:{width:innerWidth,height:innerHeight,dpr:devicePixelRatio},canvasBuffers:[...document.querySelectorAll('canvas')].map(c=>({width:c.width,height:c.height})),interaction:interaction?{control,events:inputValues.length,changes,min:Math.min(...inputValues),max:Math.max(...inputValues),work:inputWork}:null,uiMetrics:document.querySelector('#metrics')?.textContent};
+    },{duration,interaction:scenario.interaction||false,control:scenario.control||'wind'});
     if(scenario.enabled&&!Object.keys(measured.canvases).length)throw new Error('Enabled effect produced no frames: '+JSON.stringify(scenario));
     result.results.push({...scenario,actualSettings:actual,...measured});
     if(options.onResult) await options.onResult(result);

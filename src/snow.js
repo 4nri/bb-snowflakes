@@ -1,6 +1,6 @@
 /** Dependency-free snow. All distances are CSS pixels at referenceWidth. */
-export const DEFAULTS = Object.freeze({count:40, size:2, speed:28, wind:6, sway:10, opacity:0.65, enabled:true});
-const limits = {count:[0,200],size:[0.5,6],speed:[0,160],wind:[-100,100],sway:[0,60],opacity:[0,1]};
+export const DEFAULTS = Object.freeze({count:40, size:2, sizeVariation:0.8, speed:28, wind:6, sway:10, opacity:0.65, enabled:true});
+const limits = {count:[0,200],size:[0.5,6],sizeVariation:[0,1],speed:[0,160],wind:[-100,100],sway:[0,60],opacity:[0,1]};
 export function normalize(input = {}) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new TypeError('Settings must be an object');
   const result = {...DEFAULTS};
@@ -12,8 +12,10 @@ export function normalize(input = {}) {
   if(typeof input.enabled === 'boolean') result.enabled = input.enabled;
   return result;
 }
-export function createParticle(width,height,random=Math.random) {
-  return {x:random()*width,y:random()*height,depth:0.35+random()*0.65,phase:random()*Math.PI*2};
+function setDepth(p,variation) {p.depth=1-variation*(1-p.baseDepth);}
+export function createParticle(width,height,random=Math.random,sizeVariation=DEFAULTS.sizeVariation) {
+  const p={x:random()*width,y:random()*height,baseDepth:0.25+random()*0.75,phase:random()*Math.PI*2};
+  setDepth(p,sizeVariation);return p;
 }
 export function stepParticle(p,dt,settings,width,height,time) {
   p.x += settings.wind * p.depth * dt;
@@ -73,12 +75,15 @@ export class Snow {
     this.syncParticles();this.draw();this.refresh();
   }
   syncParticles() {
-    while(this.particles.length<this.settings.count) this.particles.push(createParticle(this.width,this.height));
+    while(this.particles.length<this.settings.count) this.particles.push(createParticle(this.width,this.height,Math.random,this.settings.sizeVariation));
     this.particles.length=this.settings.count;
   }
   update(settings) {
     const wasActive=this.active;
+    const previousVariation=this.settings.sizeVariation;
     this.settings=normalize({...this.settings,...settings});this.syncParticles();
+    // Cache the size/speed factor on control changes, never randomize per frame.
+    if(this.settings.sizeVariation!==previousVariation) for(const p of this.particles) setDepth(p,this.settings.sizeVariation);
     // An active animation draws the latest values on its next scheduled frame.
     if(!this.active||!wasActive)this.draw();
     if(this.active&&wasActive)schedule();else this.refresh();
@@ -118,7 +123,7 @@ export class Snow {
     for(const p of this.particles) {
       if(p.y<top-s.size||p.y>bottom+s.size) continue;
       const x=p.x+Math.sin(this.time*0.7+p.phase)*s.sway*p.depth;
-      const radius=s.size*(0.6+p.depth*0.4);
+      const radius=s.size*p.depth;
       ctx.moveTo(x+radius,p.y);ctx.arc(x,p.y,radius,0,Math.PI*2);
     }
     ctx.fill(); // One fill call for every particle in this canvas.

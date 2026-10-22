@@ -9,7 +9,8 @@
     "test": "node --test",
     "check": "node --check src/snow.js && node --check src/app.js",
     "perf": "node scripts/benchmark.mjs",
-    "compare:legacy": "node scripts/compare-legacy.mjs"
+    "compare:legacy": "node scripts/compare-legacy.mjs",
+    "smoke:parallax": "node scripts/smoke-parallax.mjs"
   },
   "engines": {
     "node": ">=20"

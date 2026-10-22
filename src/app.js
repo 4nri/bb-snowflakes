@@ -1,8 +1,8 @@
 import {Snow, DEFAULTS, normalize} from './snow.js';
 const $=id=>document.getElementById(id);
-const presets={light:{...DEFAULTS},snow:{...DEFAULTS,count:70,size:2.5,speed:42,wind:12,sway:16,opacity:.7},blizzard:{...DEFAULTS,count:110,size:2,speed:85,wind:60,sway:20,opacity:.7}};
+const presets={light:{...DEFAULTS},snow:{...DEFAULTS,count:70,size:2.5,sizeVariation:.9,speed:42,wind:12,sway:16,opacity:.7},blizzard:{...DEFAULTS,count:110,size:2,sizeVariation:1,speed:85,wind:60,sway:20,opacity:.7}};
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
-let settings={...DEFAULTS},area='content',paused=motion.matches,preset='light',toastTimer,persistTimer;
+let settings={...DEFAULTS},area='content',paused=motion.matches,preset='light',toastTimer,persistTimer,persistTask;
 function unpack(value) {
   if(!value||typeof value!=='object'||Array.isArray(value)) throw new Error('Bad configuration');
   const input=value.settings??value;
@@ -13,23 +13,30 @@ let restored=false;
 try {
   const hash=new URLSearchParams(location.hash.slice(1));
   const shared=hash.get('snow');
-  const saved=shared||localStorage.getItem('bb-snow-settings-v1');
+  let saved=shared||localStorage.getItem('bb-snow-settings-v1');
+  // pagehide flushes the latest state; a reload may still carry the older hash.
+  if(performance.getEntriesByType('navigation')[0]?.type==='reload'){
+    try{saved=localStorage.getItem('bb-snow-settings-v1')||saved;}catch{/* Shared links still work without storage. */}
+  }
   if(saved){const value=unpack(JSON.parse(saved));settings=value.settings;area=value.area;restored=true;}
 } catch {notify('Не удалось прочитать настройки. Загружен лёгкий снег.');}
 if(restored) preset=Object.keys(presets).find(key=>JSON.stringify(settings)===JSON.stringify(presets[key]))||null;
 const renderSamples=[];
 const effects=[$('start-screen'),$('main-screen')].map(el=>new Snow(el,settings,{referenceWidth:393,onFrame:ms=>{renderSamples.push(ms);if(renderSamples.length>240)renderSamples.shift();}}));
-const ranges=['count','size','opacity','speed','wind','sway'];
+const ranges=['count','size','sizeVariation','opacity','speed','wind','sway'];
 function payload(){return {version:1,settings:{...settings},area};}
 function notify(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
-function persist(){clearTimeout(persistTimer);try{localStorage.setItem('bb-snow-settings-v1',JSON.stringify(payload()));if(new URLSearchParams(location.hash.slice(1)).has('snow'))history.replaceState(null,'','#'+new URLSearchParams({snow:JSON.stringify(payload())}));}catch{/* Storage is optional. */}}
+const idleSave=typeof requestIdleCallback==='function'&&typeof cancelIdleCallback==='function';
+function cancelSave(){clearTimeout(persistTimer);if(persistTask!==undefined){if(idleSave)cancelIdleCallback(persistTask);else clearTimeout(persistTask);persistTask=undefined;}}
+function writeSettings(){try{localStorage.setItem('bb-snow-settings-v1',JSON.stringify(payload()));if(new URLSearchParams(location.hash.slice(1)).has('snow'))history.replaceState(null,'','#'+new URLSearchParams({snow:JSON.stringify(payload())}));}catch{/* Storage is optional. */}}
+function persist(){cancelSave();const save=()=>{persistTask=undefined;writeSettings();};persistTask=idleSave?requestIdleCallback(save,{timeout:1000}):setTimeout(save,0);}
 function persistSoon(){clearTimeout(persistTimer);persistTimer=setTimeout(persist,180);}
-window.addEventListener('pagehide',persist);
+window.addEventListener('pagehide',()=>{cancelSave();writeSettings();});
 function updateClips(){effects.forEach((e,i)=>e.setClip(98,area==='hero'?(i===0?500:750):818));}
 function syncRange(key){
     const input=$(key);input.value=settings[key];
     input.style.setProperty('--progress',`${(settings[key]-Number(input.min))/(Number(input.max)-Number(input.min))*100}%`);
-    const value=key==='opacity'?`${Math.round(settings[key]*100)}%`:key==='size'||key==='sway'?`${settings[key]} px`:key==='speed'||key==='wind'?`${settings[key]>0&&key==='wind'?'+':''}${settings[key]} px/с`:`${settings[key]}`;
+    const value=key==='opacity'||key==='sizeVariation'?`${Math.round(settings[key]*100)}%`:key==='size'||key==='sway'?`${settings[key]} px`:key==='speed'||key==='wind'?`${settings[key]>0&&key==='wind'?'+':''}${settings[key]} px/с`:`${settings[key]}`;
     $(key+'-value').textContent=value;
     input.setAttribute('aria-valuetext',value);
 }
