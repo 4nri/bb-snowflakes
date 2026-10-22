@@ -1,0 +1,31 @@
+{
+  "commit": "8d63c8449c7bf2077d106f85993ec97806f52919",
+  "deployment": 39788461333,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 8542,
+      "sha256": "271b809ae0c682f050e30ea41ed9ba8d2e572f10961f164154d4663d932574a5"
+    },
+    {
+      "path": "src/snow.js",
+      "bytes": 9284,
+      "sha256": "f3264de4b71134573c565d813639eb724f3cebf1b39c35eef48bb49e7ed74ee6"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 10244,
+      "sha256": "525a9981187684d54e27bdb540087885a26695d445aa845172bfec88624560f7"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 13855,
+      "sha256": "435f4f0bfa26f0aa93284d0ea826fd822382c9dd472339c23dc2192fa034ba3d"
+    },
+    {
+      "path": "docs/performance-blur-data.json",
+      "bytes": 113423,
+      "sha256": "8352d885d10d53f09814f356277c60b953d107449750f0f12e1318d6d9464a98"
+    }
+  ]
+}
