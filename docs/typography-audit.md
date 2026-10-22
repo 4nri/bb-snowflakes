@@ -20,3 +20,5 @@
 Модули src/snow.js и src/app.js не менялись. Эти правки относятся к оформлению стенда. Новых фильтров, анимаций и runtime-зависимостей нет.
 
 Повторить: `npm run smoke:typography` и `npm run smoke:design`. Измерения: [typography-verification.json](typography-verification.json).
+
+Публикация 41087c5 проверена на живом сайте теми же шестью viewport. Проверка выравнивания и выбранного текста меню прошла; CSS и оба JS совпали с локальными файлами. Подтверждение: [typography-live-verification.json](typography-live-verification.json).

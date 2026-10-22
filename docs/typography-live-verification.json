@@ -1,0 +1,18 @@
+{
+  "commit": "41087c5d176d1d6779ab189ef985fc917abef36e",
+  "deployment": 39791914718,
+  "files": [
+    {
+      "path": "styles.css",
+      "sha256": "eadea73ab24fd8109191664665b9bdcc00bb92a9f58e552f3443d8a17b084f06"
+    },
+    {
+      "path": "src/snow.js",
+      "sha256": "f3264de4b71134573c565d813639eb724f3cebf1b39c35eef48bb49e7ed74ee6"
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "525a9981187684d54e27bdb540087885a26695d445aa845172bfec88624560f7"
+    }
+  ]
+}
