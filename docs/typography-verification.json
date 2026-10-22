@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "baselineCommit": "6930495",
+  "viewports": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "textTopDeltaBefore": 2.5,
+      "textTopDeltaAfter": 0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 51.9349365234375,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "textTopDeltaBefore": 2.5,
+      "textTopDeltaAfter": 0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 51.9349365234375,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "textTopDeltaBefore": 2.5,
+      "textTopDeltaAfter": 0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 51.9349365234375,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    },
+    {
+      "viewport": [
+        393,
+        852
+      ],
+      "textTopDeltaBefore": 1.5,
+      "textTopDeltaAfter": 0.0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 47.93995666503906,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    },
+    {
+      "viewport": [
+        360,
+        740
+      ],
+      "textTopDeltaBefore": 1.5,
+      "textTopDeltaAfter": 0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 47.93995666503906,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    },
+    {
+      "viewport": [
+        320,
+        740
+      ],
+      "textTopDeltaBefore": 1.5,
+      "textTopDeltaAfter": 0,
+      "actionLineHeight": [
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "controlGapsPx": [
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "selects": [
+        {
+          "id": "zoom",
+          "text": "Вписать",
+          "textWidth": 47.93995666503906,
+          "available": 71
+        },
+        {
+          "id": "area",
+          "text": "Весь контент",
+          "textWidth": 84.43492126464844,
+          "available": 108
+        }
+      ],
+      "fonts": true,
+      "errors": []
+    }
+  ],
+  "cssSHA256": "eadea73ab24fd8109191664665b9bdcc00bb92a9f58e552f3443d8a17b084f06",
+  "unchangedSnowSHA256": "f3264de4b71134573c565d813639eb724f3cebf1b39c35eef48bb49e7ed74ee6",
+  "unchangedAppSHA256": "525a9981187684d54e27bdb540087885a26695d445aa845172bfec88624560f7"
+}

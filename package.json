@@ -12,7 +12,8 @@
     "compare:legacy": "node scripts/compare-legacy.mjs",
     "smoke:parallax": "node scripts/smoke-parallax.mjs",
     "smoke:design": "node scripts/smoke-design.mjs",
-    "smoke:blur": "node scripts/smoke-blur.mjs"
+    "smoke:blur": "node scripts/smoke-blur.mjs",
+    "smoke:typography": "node scripts/smoke-typography.mjs"
   },
   "engines": {
     "node": ">=20"
