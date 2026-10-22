@@ -35,6 +35,11 @@ test('Snow stops rendering for reduced motion, hidden tabs and destroyed contain
   assert.equal(snow.active,false);assert.equal(pending.size,0);
   snow.play({ignoreReducedMotion:true});assert.equal(snow.active,true);assert.equal(pending.size,1);
   assert.equal(snow.canvas.width,393,'No Retina buffer even on DPR 3');
+  const draw=snow.draw.bind(snow);let immediateDraws=0;snow.draw=()=>{immediateDraws++;draw();};
+  snow.measuredFps=60;snow.last=100;snow.update({wind:50});snow.setClip(98,818);snow.play({ignoreReducedMotion:true});
+  assert.equal(immediateDraws,0,'Active control changes wait for the existing frame instead of drawing repeatedly');
+  assert.equal(snow.measuredFps,60,'Control changes do not reset the FPS sample');
+  assert.equal(snow.last,100,'Control changes preserve the animation clock');
   document.hidden=true;listeners.get('visibilitychange')();flush(100);assert.equal(pending.size,0);
   document.hidden=false;listeners.get('visibilitychange')();assert.equal(pending.size,1);
   observer([{isIntersecting:false}]);flush(200);assert.equal(pending.size,0);
@@ -42,4 +47,21 @@ test('Snow stops rendering for reduced motion, hidden tabs and destroyed contain
   snow.pause();flush(300);assert.equal(pending.size,0);
   snow.play();assert.equal(pending.size,0,'play respects reduced motion again');
   snow.play({ignoreReducedMotion:true});snow.destroy();assert.equal(pending.size,0);assert.equal(removed,1);assert.equal(listeners.size,0);
+});
+
+test('60 Hz clock drift never introduces an artificial missing frame',async()=>{
+  const {Snow}=await import('../src/snow.js');
+  for(const hz of [59.94,60,60.1,61]){
+    let draws=0;const effect={last:0,lastCallback:0,nextFrame:0,time:0,particles:[],settings:DEFAULTS,frames:0,measureStart:0,draw(){draws++;}};
+    for(let i=1;i<=3600;i++)Snow.prototype.render.call(effect,Math.round((1000+i*1000/hz)*10)/10);
+    assert.equal(draws,3600,'Every display frame must be drawn at '+hz+' Hz');
+  }
+});
+test('fast displays remain capped near 60 draws per second',async()=>{
+  const {Snow}=await import('../src/snow.js');
+  for(const hz of [75,90,120,144]){
+    let draws=0;const effect={last:0,lastCallback:0,nextFrame:0,time:0,particles:[],settings:DEFAULTS,frames:0,measureStart:0,draw(){draws++;}};
+    for(let i=1;i<=hz*10;i++)Snow.prototype.render.call(effect,1000+i*1000/hz);
+    assert.ok(draws>=599&&draws<=601,'60 FPS cap at '+hz+' Hz, actual '+draws);
+  }
 });

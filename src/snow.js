@@ -76,16 +76,28 @@ export class Snow {
     while(this.particles.length<this.settings.count) this.particles.push(createParticle(this.width,this.height));
     this.particles.length=this.settings.count;
   }
-  update(settings) {this.settings=normalize({...this.settings,...settings});this.syncParticles();this.draw();this.refresh();}
-  setClip(top,bottom) {this.clip=[top,bottom];this.draw();}
+  update(settings) {
+    const wasActive=this.active;
+    this.settings=normalize({...this.settings,...settings});this.syncParticles();
+    // An active animation draws the latest values on its next scheduled frame.
+    if(!this.active||!wasActive)this.draw();
+    if(this.active&&wasActive)schedule();else this.refresh();
+  }
+  setClip(top,bottom) {this.clip=[top,bottom];if(!this.active)this.draw();}
   pause() {this.paused=true;this.refresh();}
-  play({ignoreReducedMotion=false}={}) {this.paused=false;this.respectMotion=!ignoreReducedMotion;this.refresh();}
-  refresh() {this.last=0;this.nextFrame=0;this.measureStart=0;this.frames=0;this.measuredFps=0;schedule();}
+  play({ignoreReducedMotion=false}={}) {
+    const wasActive=this.active;this.paused=false;this.respectMotion=!ignoreReducedMotion;
+    if(!wasActive&&this.active)this.refresh();else schedule();
+  }
+  refresh() {this.last=0;this.lastCallback=0;this.nextFrame=0;this.measureStart=0;this.frames=0;this.measuredFps=0;schedule();}
   render(now) {
-    if(!this.last) {this.last=now;this.nextFrame=now;this.draw();return;}
-    if(now+0.5<this.nextFrame) return;
-    // Keep the target clock instead of resetting it to now: no 60 -> 25 FPS drift.
-    this.nextFrame+=1000/60;
+    const callbackInterval=this.lastCallback?now-this.lastCallback:0;
+    this.lastCallback=now;
+    if(!this.last) {this.last=now;this.nextFrame=now+1000/60;this.draw();return;}
+    // Follow every display frame around 60 Hz. Only cap genuinely faster displays.
+    // A phase-locked 60 Hz cap otherwise drops frames when clock rates differ slightly.
+    if(callbackInterval<14 && now+0.5<this.nextFrame) return;
+    this.nextFrame=callbackInterval>=14?now+1000/60:this.nextFrame+1000/60;
     if(this.nextFrame<now) this.nextFrame=now+1000/60;
     const started=this.onFrame?performance.now():0;
     const dt=Math.min((now-this.last)/1000,0.05);this.last=now;this.time+=dt;

@@ -1,0 +1,2347 @@
+{
+  "date": "2026-10-22",
+  "beforeLimiter": {
+    "timestamp": "2026-10-22T10:50:37.431Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 12000,
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 12000.600000143051,
+        "clock": {
+          "frames": 720,
+          "fps": 59.99700014927732,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 719,
+            "fps": 59.91367098240332,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 33.30000000000109,
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.5999999046325684,
+        "callbackWorkMaxMs": 1.2999999523162842,
+        "longTasks": [],
+        "skippedCallbacks": [
+          8883
+        ],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 12000.400000095367,
+        "clock": {
+          "frames": 720,
+          "fps": 59.998000066187636,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 719,
+            "fps": 59.91466951054016,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 33.400000000001455,
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 719,
+            "fps": 59.91466951054016,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 33.400000000001455,
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.6000001430511475,
+        "callbackWorkMaxMs": 1.5,
+        "longTasks": [],
+        "skippedCallbacks": [
+          9292.4
+        ],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.40 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 12000.600000143051,
+        "clock": {
+          "frames": 720,
+          "fps": 59.99700014927732,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 719,
+            "fps": 59.91367098240332,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 33.399999999999636,
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 719,
+            "fps": 59.91367098240332,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 33.399999999999636,
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1.2000000476837158,
+        "callbackWorkMaxMs": 2.3000001907348633,
+        "longTasks": [],
+        "skippedCallbacks": [
+          9240
+        ],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "220 точек · 60 FPS · 0.90 мс"
+      },
+      {
+        "mode": "demo-mobile",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "interaction": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 12009.399999856949,
+        "clock": {
+          "frames": 720,
+          "fps": 59.95303678856365,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 720,
+            "fps": 59.95303678856365,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 720,
+            "fps": 59.95303678856365,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 2.0999999046325684,
+        "callbackWorkMaxMs": 2.8000001907348633,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 262,
+            "height": 569
+          },
+          {
+            "width": 262,
+            "height": 569
+          }
+        ],
+        "uiMetrics": "400 точек · 0 FPS · 0.00 мс"
+      }
+    ]
+  },
+  "beforeControlsStress": {
+    "mode": "demo-mobile",
+    "rate": 10,
+    "count": 200,
+    "enabled": true,
+    "interaction": true,
+    "actualSettings": {
+      "count": 200,
+      "enabled": true
+    },
+    "elapsedMs": 30007.300000190735,
+    "clock": {
+      "frames": 1799,
+      "fps": 59.95207832722588,
+      "minRolling1sFps": 59,
+      "p50Ms": 16.699999999999818,
+      "p95Ms": 16.799999999999272,
+      "p99Ms": 16.80000000000109,
+      "maxMs": 33.29999999999927,
+      "gapsOver25ms": 2,
+      "gapsOver50ms": 0
+    },
+    "canvases": {
+      "start-screen": {
+        "frames": 1799,
+        "fps": 59.95207832722588,
+        "minRolling1sFps": 59,
+        "p50Ms": 16.699999999999818,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 33.29999999999927,
+        "gapsOver25ms": 2,
+        "gapsOver50ms": 0
+      },
+      "main-screen": {
+        "frames": 1799,
+        "fps": 59.95207832722588,
+        "minRolling1sFps": 59,
+        "p50Ms": 16.699999999999818,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000109,
+        "maxMs": 33.29999999999927,
+        "gapsOver25ms": 2,
+        "gapsOver50ms": 0
+      }
+    },
+    "callbackWorkP95Ms": 1.5999999046325684,
+    "callbackWorkMaxMs": 2.9000000953674316,
+    "longTasks": [],
+    "skippedCallbacks": [],
+    "visibility": "visible",
+    "viewport": {
+      "width": 393,
+      "height": 852,
+      "dpr": 3
+    },
+    "canvasBuffers": [
+      {
+        "width": 262,
+        "height": 569
+      },
+      {
+        "width": 262,
+        "height": 569
+      }
+    ],
+    "uiMetrics": "400 точек · 0 FPS · 0.00 мс"
+  },
+  "afterLimiterMatrix": {
+    "timestamp": "2026-10-22T10:52:12.670Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 8000,
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "module-mobile",
+        "rate": 1,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8001.5,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98875210897957,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 1,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8001.900000095367,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98575338285649,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.98575338285649,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.10000014305114746,
+        "callbackWorkMaxMs": 0.20000004768371582,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 1,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8001,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.10000014305114746,
+        "callbackWorkMaxMs": 0.20000004768371582,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 1,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8001.600000143051,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98800239844764,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.98800239844764,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.10000014305114746,
+        "callbackWorkMaxMs": 0.20000004768371582,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 4,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8000.600000143051,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99550033640197,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 4,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8000.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.998500037141454,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.2999999523162842,
+        "callbackWorkMaxMs": 0.9000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 4,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8000.599999904633,
+        "clock": {
+          "frames": 481,
+          "fps": 60.1204909638944,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 481,
+            "fps": 60.1204909638944,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.3000001907348633,
+        "callbackWorkMaxMs": 0.7000000476837158,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 4,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8000.799999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99400060029756,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.2999999523162842,
+        "callbackWorkMaxMs": 1,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8000.299999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99775008472944,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8001,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.40000009536743164,
+        "callbackWorkMaxMs": 1.2999999523162842,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8000.900000095367,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99325075857448,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99325075857448,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.5,
+        "callbackWorkMaxMs": 1.2999999523162842,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8000.900000095367,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99325075857448,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99325075857448,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.8999998569488525,
+        "callbackWorkMaxMs": 1.7000000476837158,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8001.099999904633,
+        "clock": {
+          "frames": 481,
+          "fps": 60.11673394979855,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8001,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.6000001430511475,
+        "callbackWorkMaxMs": 2.700000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8001.399999856949,
+        "clock": {
+          "frames": 481,
+          "fps": 60.11447996708069,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 481,
+            "fps": 60.11447996708069,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.7000000476837158,
+        "callbackWorkMaxMs": 2.1999998092651367,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8001,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1,
+        "callbackWorkMaxMs": 2.200000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 1,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8001.700000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98725270844191,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "0 точек · 0 FPS · 0.00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 1,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8001.299999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99025158447509,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.99025158447509,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.99025158447509,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.20000004768371582,
+        "callbackWorkMaxMs": 0.3000001907348633,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.10 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 1,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8001.700000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98725270844191,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.98725270844191,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.98725270844191,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.20000004768371582,
+        "callbackWorkMaxMs": 0.40000009536743164,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "220 точек · 60 FPS · 0.10 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 1,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8000.400000095367,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99700014927732,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.800000000000182,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.99700014927732,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.99700014927732,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.2999999523162842,
+        "callbackWorkMaxMs": 0.40000009536743164,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 0.20 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8000.199999809265,
+        "clock": {
+          "frames": 480,
+          "fps": 59.9985000389295,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "0 точек · 0 FPS · 0.00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8000.599999904633,
+        "clock": {
+          "frames": 480,
+          "fps": 59.995500338189835,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.995500338189835,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.995500338189835,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.5999999046325684,
+        "callbackWorkMaxMs": 1.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.40 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8000.299999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99775008472944,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.99775008472944,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.99775008472944,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.7000000476837158,
+        "callbackWorkMaxMs": 1.3999998569488525,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "220 точек · 60 FPS · 0.50 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8000.5,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99625023436035,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.99625023436035,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.99625023436035,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.9000000953674316,
+        "callbackWorkMaxMs": 1.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 0.70 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "enabled": false
+        },
+        "elapsedMs": 8001.5,
+        "clock": {
+          "frames": 481,
+          "fps": 60.113728675873276,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "0 точек · 0 FPS · 0.00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8001.100000143051,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99175113314646,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.800000000000182,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.99175113314646,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.99175113314646,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.7999999523162842,
+        "callbackWorkMaxMs": 2.0999999046325684,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.50 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "enabled": true
+        },
+        "elapsedMs": 8002.400000095367,
+        "clock": {
+          "frames": 481,
+          "fps": 60.106967908910796,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 481,
+            "fps": 60.106967908910796,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 481,
+            "fps": 60.106967908910796,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1,
+        "callbackWorkMaxMs": 2.4000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "220 точек · 60 FPS · 0.70 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 8002,
+        "clock": {
+          "frames": 481,
+          "fps": 60.109972506873284,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 481,
+            "fps": 60.109972506873284,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 481,
+            "fps": 60.109972506873284,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1.5999999046325684,
+        "callbackWorkMaxMs": 2.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 1.10 мс"
+      },
+      {
+        "mode": "demo-mobile",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8000.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.998500037141454,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.800000000000182,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.5999999046325684,
+        "callbackWorkMaxMs": 1.2000000476837158,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 262,
+            "height": 569
+          },
+          {
+            "width": 262,
+            "height": 569
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.10 мс"
+      },
+      {
+        "mode": "demo-mobile",
+        "rate": 10,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "enabled": true
+        },
+        "elapsedMs": 8000.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.998500037141454,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.9000000953674316,
+        "callbackWorkMaxMs": 2.200000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 262,
+            "height": 569
+          },
+          {
+            "width": 262,
+            "height": 569
+          }
+        ],
+        "uiMetrics": "80 точек · 60 FPS · 0.40 мс"
+      }
+    ]
+  },
+  "afterFinalLong": {
+    "timestamp": "2026-10-22T11:02:37.684Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 30000,
+    "calibration": [
+      {
+        "rate": 1,
+        "medianMs": 3.799999952316284
+      },
+      {
+        "rate": 4,
+        "medianMs": 15.700000047683716
+      },
+      {
+        "rate": 6,
+        "medianMs": 24.800000190734863
+      },
+      {
+        "rate": 10,
+        "medianMs": 42
+      },
+      {
+        "rate": 1,
+        "medianMs": 3.700000047683716
+      }
+    ],
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 40,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "speed": 28,
+          "wind": 6,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true
+        },
+        "elapsedMs": 30000.900000095367,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99820005380766,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 1800,
+            "fps": 59.99820005380766,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.39999985694885254,
+        "callbackWorkMaxMs": 1.4000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 110,
+        "enabled": true,
+        "actualSettings": {
+          "count": 110,
+          "size": 2,
+          "speed": 85,
+          "wind": 60,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true
+        },
+        "elapsedMs": 30000.39999985695,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99920001095262,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 1800,
+            "fps": 59.99920001095262,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 0.6000001430511475,
+        "callbackWorkMaxMs": 2.200000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ]
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 30003.799999952316,
+        "clock": {
+          "frames": 1801,
+          "fps": 60.025730074285995,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1801,
+            "fps": 60.025730074285995,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 1801,
+            "fps": 60.025730074285995,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1.2000000476837158,
+        "callbackWorkMaxMs": 2.299999952316284,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 272,
+            "height": 590
+          },
+          {
+            "width": 272,
+            "height": 590
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 0.80 мс"
+      },
+      {
+        "mode": "demo-mobile",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "interaction": true,
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 30001.10000014305,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99780008037763,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.99780008037763,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.99780008037763,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1.3999998569488525,
+        "callbackWorkMaxMs": 2.299999952316284,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 262,
+            "height": 569
+          },
+          {
+            "width": 262,
+            "height": 569
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 0.90 мс"
+      }
+    ],
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M2 Ultra"
+    }
+  },
+  "afterFinalBursts": {
+    "timestamp": "2026-10-22T11:04:59.119Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 30000,
+    "calibration": [],
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "demo-mobile",
+        "rate": 10,
+        "count": 200,
+        "enabled": true,
+        "interaction": "bursts",
+        "actualSettings": {
+          "count": 200,
+          "enabled": true
+        },
+        "elapsedMs": 30003.60000014305,
+        "clock": {
+          "frames": 1801,
+          "fps": 60.02613019742341,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1801,
+            "fps": 60.02613019742341,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "main-screen": {
+            "frames": 1801,
+            "fps": 60.02613019742341,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkP95Ms": 1.5,
+        "callbackWorkMaxMs": 2.5999999046325684,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 262,
+            "height": 569
+          },
+          {
+            "width": 262,
+            "height": 569
+          }
+        ],
+        "uiMetrics": "400 точек · 60 FPS · 1.20 мс"
+      }
+    ],
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M2 Ultra"
+    }
+  }
+}

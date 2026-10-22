@@ -4,6 +4,13 @@
   "private": true,
   "type": "module",
   "description": "Dependency-free canvas snow and Figma comparison playground",
-  "scripts": {"dev": "node scripts/serve.mjs", "test": "node --test", "check": "node --check src/snow.js && node --check src/app.js"},
-  "engines": {"node": ">=20"}
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check src/snow.js && node --check src/app.js",
+    "perf": "node scripts/benchmark.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

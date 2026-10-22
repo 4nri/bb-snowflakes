@@ -1,0 +1,1 @@
+{"duration":30000,"calibrate":true,"scenarios":[{"mode":"module-mobile","rate":6,"count":40,"enabled":true},{"mode":"module-mobile","rate":10,"count":110,"enabled":true},{"mode":"demo-desktop","rate":10,"count":200,"enabled":true},{"mode":"demo-mobile","rate":10,"count":200,"enabled":true,"interaction":true}]}

@@ -2,7 +2,7 @@ import {Snow, DEFAULTS, normalize} from './snow.js';
 const $=id=>document.getElementById(id);
 const presets={light:{...DEFAULTS},snow:{...DEFAULTS,count:70,size:2.5,speed:42,wind:12,sway:16,opacity:.7},blizzard:{...DEFAULTS,count:110,size:2,speed:85,wind:60,sway:20,opacity:.7}};
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
-let settings={...DEFAULTS},area='content',paused=motion.matches,preset='light',toastTimer;
+let settings={...DEFAULTS},area='content',paused=motion.matches,preset='light',toastTimer,persistTimer;
 function unpack(value) {
   if(!value||typeof value!=='object'||Array.isArray(value)) throw new Error('Bad configuration');
   const input=value.settings??value;
@@ -22,17 +22,20 @@ const effects=[$('start-screen'),$('main-screen')].map(el=>new Snow(el,settings,
 const ranges=['count','size','opacity','speed','wind','sway'];
 function payload(){return {version:1,settings:{...settings},area};}
 function notify(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
-function persist(){try{localStorage.setItem('bb-snow-settings-v1',JSON.stringify(payload()));if(new URLSearchParams(location.hash.slice(1)).has('snow'))history.replaceState(null,'','#'+new URLSearchParams({snow:JSON.stringify(payload())}));}catch{/* Storage is optional. */}}
+function persist(){clearTimeout(persistTimer);try{localStorage.setItem('bb-snow-settings-v1',JSON.stringify(payload()));if(new URLSearchParams(location.hash.slice(1)).has('snow'))history.replaceState(null,'','#'+new URLSearchParams({snow:JSON.stringify(payload())}));}catch{/* Storage is optional. */}}
+function persistSoon(){clearTimeout(persistTimer);persistTimer=setTimeout(persist,180);}
+window.addEventListener('pagehide',persist);
 function updateClips(){effects.forEach((e,i)=>e.setClip(98,area==='hero'?(i===0?500:750):818));}
-function sync() {
-  renderSamples.length=0;
-  ranges.forEach(key=>{
+function syncRange(key){
     const input=$(key);input.value=settings[key];
     input.style.setProperty('--progress',`${(settings[key]-Number(input.min))/(Number(input.max)-Number(input.min))*100}%`);
     const value=key==='opacity'?`${Math.round(settings[key]*100)}%`:key==='size'||key==='sway'?`${settings[key]} px`:key==='speed'||key==='wind'?`${settings[key]>0&&key==='wind'?'+':''}${settings[key]} px/с`:`${settings[key]}`;
     $(key+'-value').textContent=value;
     input.setAttribute('aria-valuetext',value);
-  });
+}
+function sync() {
+  renderSamples.length=0;
+  ranges.forEach(syncRange);
   $('enabled').checked=settings.enabled;$('area').value=area;
   document.querySelectorAll('[data-preset]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.preset===preset)));
   $('custom-label').hidden=!!preset;
@@ -55,8 +58,13 @@ function updatePlayback() {
 function updateMetrics(){const fps=effects.find(e=>e.active)?.measuredFps||0;const sorted=[...renderSamples].sort((a,b)=>a-b);const p95=sorted[Math.floor(sorted.length*.95)]||0;$('metrics').textContent=`${settings.enabled?settings.count*2:0} точек · ${fps} FPS · ${p95.toFixed(2)} мс`;$('metrics').title='Время расчёта и отрисовки одного экрана, 95-й процентиль. Частота зависит от устройства и браузера.';}
 for(const key of ranges) $(key).addEventListener('input',()=>{
   const value=ranges.includes(key)?Number($(key).value):$(key).value;
-  settings=normalize({...settings,[key]:value});preset=null;sync();
+  settings=normalize({...settings,[key]:value});
+  if(preset){preset=null;document.querySelector('[data-preset][aria-pressed="true"]')?.setAttribute('aria-pressed','false');$('custom-label').hidden=false;}
+  syncRange(key);effects.forEach(e=>e.update(settings));
+  if(key==='count')updatePlayback();
+  persistSoon();
 });
+for(const key of ranges)$(key).addEventListener('change',persist);
 $('enabled').addEventListener('change',()=>{settings.enabled=$('enabled').checked;sync();});
 $('area').addEventListener('change',()=>{area=$('area').value;updateClips();persist();});
 document.querySelectorAll('[data-preset]').forEach(el=>el.addEventListener('click',()=>{preset=el.dataset.preset;settings={...presets[preset]};sync();}));
