@@ -1,0 +1,4242 @@
+{
+  "baselineCommit": "4aa612f",
+  "beforeSHA256": "70bb86e349114682cb9a6418b0518b3770694358c77306b5eaf0597da8dba1ce",
+  "sources": {
+    "src/snow.js": {
+      "sha256": "f3264de4b71134573c565d813639eb724f3cebf1b39c35eef48bb49e7ed74ee6",
+      "bytes": 9284,
+      "gzipBytes": 3405
+    },
+    "src/app.js": {
+      "sha256": "525a9981187684d54e27bdb540087885a26695d445aa845172bfec88624560f7",
+      "bytes": 10244,
+      "gzipBytes": 3850
+    },
+    "index.html": {
+      "sha256": "271b809ae0c682f050e30ea41ed9ba8d2e572f10961f164154d4663d932574a5",
+      "bytes": 8542,
+      "gzipBytes": 2867
+    },
+    "styles.css": {
+      "sha256": "435f4f0bfa26f0aa93284d0ea826fd822382c9dd472339c23dc2192fa034ba3d",
+      "bytes": 13855,
+      "gzipBytes": 3422
+    }
+  },
+  "baseline": {
+    "timestamp": "2026-10-22T13:20:49.462Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 15000,
+    "calibration": [],
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 15002.299999952316,
+        "clock": {
+          "frames": 901,
+          "fps": 60.057457856652896,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 901,
+            "fps": 60.057457856652896,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 901,
+            "fps": 60.057457856652896,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.8999998569488525,
+        "callbackWorkMaxMs": 2.299999952316284,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,50 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 15000.5,
+        "clock": {
+          "frames": 900,
+          "fps": 59.998000066664446,
+          "minRolling1sFps": 59,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.5999999046325684,
+        "callbackWorkMaxMs": 3.700000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран1,00 мс"
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "speed": 28,
+          "wind": 6,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true,
+          "blur": 0
+        },
+        "elapsedMs": 15000.700000047684,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99720013046985,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "scene": {
+            "frames": 900,
+            "fps": 59.99720013046985,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1,
+        "callbackWorkMaxMs": 2.4000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ],
+        "interaction": null
+      }
+    ],
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M2 Ultra"
+    }
+  },
+  "finalMatrix": {
+    "timestamp": "2026-10-22T13:25:35.377Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 15000,
+    "calibration": [
+      {
+        "rate": 1,
+        "medianMs": 3.700000047683716
+      },
+      {
+        "rate": 4,
+        "medianMs": 16.40000009536743
+      },
+      {
+        "rate": 6,
+        "medianMs": 25.200000047683716
+      },
+      {
+        "rate": 10,
+        "medianMs": 42
+      },
+      {
+        "rate": 1,
+        "medianMs": 3.6000001430511475
+      }
+    ],
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 15000.299999952316,
+        "clock": {
+          "frames": 900,
+          "fps": 59.998800024190245,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.9000000953674316,
+        "callbackWorkMaxMs": 1.6000001430511475,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,40 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 15000.5,
+        "clock": {
+          "frames": 900,
+          "fps": 59.998000066664446,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.5,
+        "callbackWorkMaxMs": 4.700000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран1,10 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 15000.400000095367,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99840004228408,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99840004228408,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99840004228408,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.4000000953674316,
+        "callbackWorkMaxMs": 2,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран0,90 мс"
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 6,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "speed": 28,
+          "wind": 6,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true
+        },
+        "elapsedMs": 15001,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99600026664889,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "scene": {
+            "frames": 900,
+            "fps": 59.99600026664889,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.8999998569488525,
+        "callbackWorkMaxMs": 1.5999999046325684,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ],
+        "interaction": null
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 15000.299999952316,
+        "clock": {
+          "frames": 900,
+          "fps": 59.998800024190245,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.2000000476837158,
+        "callbackWorkMaxMs": 2.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран1,00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 15000.5,
+        "clock": {
+          "frames": 900,
+          "fps": 59.998000066664446,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.998000066664446,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.3999998569488525,
+        "callbackWorkMaxMs": 3.9000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран1,80 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 15001,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99600026664889,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99600026664889,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99600026664889,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.299999952316284,
+        "callbackWorkMaxMs": 4,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран1,70 мс"
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "speed": 28,
+          "wind": 6,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true
+        },
+        "elapsedMs": 15001.099999904633,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99560032302442,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "scene": {
+            "frames": 900,
+            "fps": 59.99560032302442,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.3999998569488525,
+        "callbackWorkMaxMs": 2.4000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ],
+        "interaction": null
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 15001,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99600026664889,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99600026664889,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99600026664889,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.7999999523162842,
+        "callbackWorkMaxMs": 2.200000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,40 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 15000.400000095367,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99840004228408,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99840004228408,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99840004228408,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1,
+        "callbackWorkMaxMs": 2.3000001907348633,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,80 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 15001.600000143051,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99360068202177,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99360068202177,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99360068202177,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.5,
+        "callbackWorkMaxMs": 2.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран1,10 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 0,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 0,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 15005,
+        "clock": {
+          "frames": 901,
+          "fps": 60.04665111629457,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 901,
+            "fps": 60.04665111629457,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 901,
+            "fps": 60.04665111629457,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.5999999046325684,
+        "callbackWorkMaxMs": 4.5,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран2,00 мс"
+      },
+      {
+        "mode": "demo-mobile",
+        "rate": 10,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 15002,
+        "clock": {
+          "frames": 901,
+          "fps": 60.058658845487265,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 901,
+            "fps": 60.058658845487265,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 901,
+            "fps": 60.058658845487265,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.2000000476837158,
+        "callbackWorkMaxMs": 2.200000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 134,
+            "height": 291
+          },
+          {
+            "width": 134,
+            "height": 291
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,90 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0,
+        "enabled": true,
+        "interaction": {
+          "control": "blur",
+          "events": 100,
+          "changes": 10,
+          "min": 0,
+          "max": 1,
+          "work": [
+            {
+              "type": "input",
+              "at": 2477.7000000476837,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 2572,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 2672.7999999523163,
+              "ms": 2.1000001430511475
+            },
+            {
+              "type": "input",
+              "at": 2777.7000000476837,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 2872.2999999523163,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 2975.7999999523163,
+              "ms": 1.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 3076.2000000476837,
+              "ms": 2.200000047683716
+            },
+            {
+              "type": "input",
+              "at": 3172.2999999523163,
+              "ms": 1.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 3273,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 3372.5,
+              "ms": 0.5
+            },
+            {
+              "type": "input",
+              "at": 3872.2999999523163,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 3972.100000143051,
+              "ms": 0.5
+            },
+            {
+              "type": "input",
+              "at": 4072.2999999523163,
+              "ms": 1.1000001430511475
+            },
+            {
+              "type": "input",
+              "at": 4176,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4272.400000095367,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 4371.900000095367,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 4475.600000143051,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 4577.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 4676.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 4772.400000095367,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "change",
+              "at": 4872,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 5377.299999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 5473,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 5574,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 5672.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 5776.100000143051,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 5877.5,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 5977.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 6072,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 6172.100000143051,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 6272,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "change",
+              "at": 6376.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 6872.100000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 6971.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 7077.799999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 7176.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 7273,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 7376.200000047684,
+              "ms": 1.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 7477,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 7576.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 7672.700000047684,
+              "ms": 1.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 7772.299999952316,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "change",
+              "at": 7871.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 8372,
+              "ms": 1.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 8472.799999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 8576.400000095367,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 8675.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 8771.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 8875.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 8972.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9072.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 9177.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9279.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 9375.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9876.100000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9972.100000143051,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 10072,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 10180.100000143051,
+              "ms": 1.1999998092651367
+            },
+            {
+              "type": "input",
+              "at": 10271.900000095367,
+              "ms": 1.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 10372.299999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 10472.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 10576.200000047684,
+              "ms": 1.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 10677.200000047684,
+              "ms": 1.4000000953674316
+            },
+            {
+              "type": "input",
+              "at": 10772.600000143051,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 10877.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 11371.799999952316,
+              "ms": 1.3000001907348633
+            },
+            {
+              "type": "input",
+              "at": 11476.299999952316,
+              "ms": 1.5
+            },
+            {
+              "type": "input",
+              "at": 11571.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 11672.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 11771.799999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 11876.700000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 11975.200000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 12077.5,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 12175.5,
+              "ms": 1.4000000953674316
+            },
+            {
+              "type": "input",
+              "at": 12271.799999952316,
+              "ms": 1.3000001907348633
+            },
+            {
+              "type": "change",
+              "at": 12371.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12875.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12976,
+              "ms": 1.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 13078,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 13176.700000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 13272,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 13377,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 13476.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 13576.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 13672.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 13771.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 13876.700000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 14372.700000047684,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 14472.299999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 14575.600000143051,
+              "ms": 1.3999998569488525
+            },
+            {
+              "type": "input",
+              "at": 14676.600000143051,
+              "ms": 1.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 14772.200000047684,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 14873.5,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 14972.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 15072.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 15172.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 15272.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 15374.5,
+              "ms": 2
+            },
+            {
+              "type": "input",
+              "at": 15878.5,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 15975.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16077.700000047684,
+              "ms": 1.4000000953674316
+            },
+            {
+              "type": "input",
+              "at": 16176,
+              "ms": 1.4000000953674316
+            },
+            {
+              "type": "input",
+              "at": 16272.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 16375.200000047684,
+              "ms": 2.200000047683716
+            },
+            {
+              "type": "input",
+              "at": 16472.10000014305,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 16576.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16676.5,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 16775.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 16872.10000014305,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 17372,
+              "ms": 1.1000001430511475
+            }
+          ]
+        },
+        "control": "blur",
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 15001.5,
+        "clock": {
+          "frames": 900,
+          "fps": 59.99400059994001,
+          "minRolling1sFps": 59,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000109,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.99400059994001,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.99400059994001,
+            "minRolling1sFps": 59,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000109,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.200000047683716,
+        "callbackWorkMaxMs": 3.299999952316284,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "uiMetrics": "Частиц400FPS60CPU на экран1,70 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "interaction": {
+          "control": "size",
+          "events": 100,
+          "changes": 10,
+          "min": 0.5,
+          "max": 6,
+          "work": [
+            {
+              "type": "input",
+              "at": 2491.800000190735,
+              "ms": 1.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 2591.300000190735,
+              "ms": 1.5
+            },
+            {
+              "type": "input",
+              "at": 2692.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 2791.7000000476837,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 2891.9000000953674,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 2991.600000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 3092.2000000476837,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 3191.2000000476837,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 3291.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 3391.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 3890.9000000953674,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 3990.7000000476837,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4092.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4191.700000047684,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 4291.900000095367,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 4392.100000143051,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 4491.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 4591.600000143051,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 4691.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4791,
+              "ms": 1.7000000476837158
+            },
+            {
+              "type": "change",
+              "at": 4890.5,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 5392,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 5491.700000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 5591.5,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 5692.300000190735,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 5791.600000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 5891.800000190735,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 5990.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 6091,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 6191.700000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 6291,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 6390.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 6891.100000143051,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 6990.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7091.100000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7190.800000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 7290.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 7390.700000047684,
+              "ms": 0.6000001430511475
+            },
+            {
+              "type": "input",
+              "at": 7490.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7591.700000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 7691.300000190735,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7790.600000143051,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "change",
+              "at": 7891.100000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 8390.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 8490.600000143051,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 8591.200000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 8691,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 8791.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 8890.600000143051,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 8990.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9091,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9190.900000095367,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 9291.300000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 9390.300000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 9890.400000095367,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 9991.600000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 10091,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 10191.300000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 10290.900000095367,
+              "ms": 0.5
+            },
+            {
+              "type": "input",
+              "at": 10391.200000047684,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 10490.5,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 10592.300000190735,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 10692.100000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 10790.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 10890.800000190735,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 11390.800000190735,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 11490.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 11591,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 11691.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 11791.400000095367,
+              "ms": 0.5
+            },
+            {
+              "type": "input",
+              "at": 11890.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 11990.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12092,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 12191.100000143051,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 12291.800000190735,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 12390.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 12892,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12991.800000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 13091.200000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 13192.100000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 13290.600000143051,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 13390.700000047684,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 13490.5,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 13592.300000190735,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 13690.700000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 13790.300000190735,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "change",
+              "at": 13892,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 14391.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 14491.600000143051,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 14591.800000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 14692.400000095367,
+              "ms": 0.40000009536743164
+            },
+            {
+              "type": "input",
+              "at": 14790.700000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 14891.800000190735,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 14990.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 15090.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 15191.200000047684,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 15290.600000143051,
+              "ms": 0.5
+            },
+            {
+              "type": "change",
+              "at": 15392.300000190735,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 15890.600000143051,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 15990.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 16090.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16190.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16291.800000190735,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 16390.800000190735,
+              "ms": 0.39999985694885254
+            },
+            {
+              "type": "input",
+              "at": 16490.60000014305,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16591.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 16690.60000014305,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16790.400000095367,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "change",
+              "at": 16891.10000014305,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 17392.10000014305,
+              "ms": 0.20000004768371582
+            }
+          ]
+        },
+        "control": "size",
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 15002,
+        "clock": {
+          "frames": 900,
+          "fps": 59.992001066524466,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 900,
+            "fps": 59.992001066524466,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 900,
+            "fps": 59.992001066524466,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.8999998569488525,
+        "callbackWorkMaxMs": 2.799999952316284,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "uiMetrics": "Частиц400FPS60CPU на экран1,20 мс"
+      }
+    ],
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M2 Ultra"
+    }
+  },
+  "finalLong": {
+    "timestamp": "2026-10-22T13:30:28.004Z",
+    "browser": "156.0.8078.48",
+    "durationMs": 30000,
+    "calibration": [],
+    "method": "CDP Emulation.setCPUThrottlingRate; real rAF timestamps at actual canvas clearRect; 1s rolling windows; no tracing overhead",
+    "results": [
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 30000.5,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.999000016666386,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.999000016666386,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.999000016666386,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1,
+        "callbackWorkMaxMs": 1.9000000953674316,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,60 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 30000.599999904633,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.998800024190245,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.998800024190245,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.6000001430511475,
+        "callbackWorkMaxMs": 1.7000000476837158,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,40 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 0,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0,
+        "enabled": false,
+        "actualSettings": {
+          "count": 0,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0,
+          "enabled": false
+        },
+        "elapsedMs": 30000.700000047684,
+        "clock": {
+          "frames": 1801,
+          "fps": 60.031932588144194,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {},
+        "callbackWorkP95Ms": 0,
+        "callbackWorkMaxMs": 0,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц0FPS0CPU на экран0,00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 6,
+        "count": 40,
+        "size": 2,
+        "sizeVariation": 0.8,
+        "blur": 0.4,
+        "enabled": true,
+        "actualSettings": {
+          "count": 40,
+          "size": 2,
+          "sizeVariation": 0.8,
+          "blur": 0.4,
+          "enabled": true
+        },
+        "elapsedMs": 30000.200000047684,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.999600002571285,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.700000000000728,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.999600002571285,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.999600002571285,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 0.7000000476837158,
+        "callbackWorkMaxMs": 1.8999998569488525,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц80FPS60CPU на экран0,50 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 30003.099999904633,
+        "clock": {
+          "frames": 1801,
+          "fps": 60.027130530036054,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1801,
+            "fps": 60.027130530036054,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1801,
+            "fps": 60.027130530036054,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.1999998092651367,
+        "callbackWorkMaxMs": 3.3999998569488525,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран2,00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 0,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 0,
+          "blur": 1,
+          "enabled": true
+        },
+        "elapsedMs": 30000.799999952316,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99840004276089,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.99840004276089,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.99840004276089,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.5,
+        "callbackWorkMaxMs": 3.700000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "interaction": null,
+        "uiMetrics": "Частиц400FPS60CPU на экран2,00 мс"
+      },
+      {
+        "mode": "demo-desktop",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 0,
+        "enabled": true,
+        "interaction": {
+          "control": "blur",
+          "events": 200,
+          "changes": 20,
+          "min": 0,
+          "max": 1,
+          "work": [
+            {
+              "type": "input",
+              "at": 2456.9000000953674,
+              "ms": 4.299999952316284
+            },
+            {
+              "type": "input",
+              "at": 2556.5,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 2656.7999999523163,
+              "ms": 1.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 2757,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 2858.2000000476837,
+              "ms": 1.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 2957.2999999523163,
+              "ms": 1.6000001430511475
+            },
+            {
+              "type": "input",
+              "at": 3058.2000000476837,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 3156.2999999523163,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 3257.0999999046326,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 3357.5,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 3856.7999999523163,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 3956.2000000476837,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 4056.5999999046326,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4157,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 4256.400000095367,
+              "ms": 0.6999998092651367
+            },
+            {
+              "type": "input",
+              "at": 4357.299999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 4456.299999952316,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 4556.5,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 4656.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 4757.700000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 4857.200000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 5356.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 5456.900000095367,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 5558,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 5657.099999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 5756.400000095367,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 5857.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 5956.5,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 6057.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 6156.599999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 6257.700000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "change",
+              "at": 6356.900000095367,
+              "ms": 0.19999980926513672
+            },
+            {
+              "type": "input",
+              "at": 6856.599999904633,
+              "ms": 0.6000001430511475
+            },
+            {
+              "type": "input",
+              "at": 6957.5,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 7057.900000095367,
+              "ms": 0.19999980926513672
+            },
+            {
+              "type": "input",
+              "at": 7156.5,
+              "ms": 0.40000009536743164
+            },
+            {
+              "type": "input",
+              "at": 7256.700000047684,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 7358,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 7456.799999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 7556.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7657,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 7757.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 7856.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 8357.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 8456.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 8557.299999952316,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 8657.400000095367,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 8756.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 8856.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 8956.5,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 9057.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 9157.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9257.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 9356.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 9857,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 9957.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 10056.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 10156.599999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 10257.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 10357.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 10456.200000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 10556.900000095367,
+              "ms": 0.19999980926513672
+            },
+            {
+              "type": "input",
+              "at": 10656.5,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 10756.5,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "change",
+              "at": 10856,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 11356.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 11458,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 11557.099999904633,
+              "ms": 1.3000001907348633
+            },
+            {
+              "type": "input",
+              "at": 11657.200000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 11757.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 11856.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 11957.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12057.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 12157.599999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12257.799999952316,
+              "ms": 0.6000001430511475
+            },
+            {
+              "type": "change",
+              "at": 12357.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 12857.700000047684,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 12956.799999952316,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 13057.200000047684,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 13156.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 13257,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 13356.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 13457.599999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 13557.200000047684,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 13657.299999952316,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 13757.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 13856.799999952316,
+              "ms": 0.40000009536743164
+            },
+            {
+              "type": "input",
+              "at": 14357.200000047684,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 14456.200000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 14557,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 14656.599999904633,
+              "ms": 1.3000001907348633
+            },
+            {
+              "type": "input",
+              "at": 14756.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 14856.200000047684,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 14957,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 15056.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 15156.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 15258.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 15356.599999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 15856.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 15956.5,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 16056.5,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 16156.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16256.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 16356.799999952316,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 16456.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 16557.5,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 16656.599999904633,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 16756.900000095367,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "change",
+              "at": 16856.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 17356.5,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 17457.299999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 17556.400000095367,
+              "ms": 0.19999980926513672
+            },
+            {
+              "type": "input",
+              "at": 17656.5,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 17756.700000047684,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 17856.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 17956.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 18057.799999952316,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 18157.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 18256.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 18356.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 18856.900000095367,
+              "ms": 1.1999998092651367
+            },
+            {
+              "type": "input",
+              "at": 18957.299999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 19056.299999952316,
+              "ms": 1.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 19156.599999904633,
+              "ms": 1.5
+            },
+            {
+              "type": "input",
+              "at": 19258,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 19357.700000047684,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 19457.099999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 19558.099999904633,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 19658.099999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 19756.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "change",
+              "at": 19856.900000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 20361.299999952316,
+              "ms": 2.200000047683716
+            },
+            {
+              "type": "input",
+              "at": 20458.400000095367,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 20557,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 20657.700000047684,
+              "ms": 0.7000000476837158
+            },
+            {
+              "type": "input",
+              "at": 20756.599999904633,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 20856.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 20957.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 21056.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 21156.5,
+              "ms": 0.5
+            },
+            {
+              "type": "input",
+              "at": 21256.900000095367,
+              "ms": 1.6999998092651367
+            },
+            {
+              "type": "change",
+              "at": 21357.099999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 21857.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 21957.099999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 22057.900000095367,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "input",
+              "at": 22158,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 22256.5,
+              "ms": 1.5
+            },
+            {
+              "type": "input",
+              "at": 22356.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 22457.799999952316,
+              "ms": 1.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 22557.900000095367,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 22657.099999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 22757.099999904633,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 22856.099999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 23357.599999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 23456.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 23557.5,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 23657,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 23756.599999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 23857.200000047684,
+              "ms": 1.2000000476837158
+            },
+            {
+              "type": "input",
+              "at": 23956.599999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 24056.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 24156.400000095367,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 24257.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "change",
+              "at": 24357.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 24856.5,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 24957.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 25057,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 25156.299999952316,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 25257.400000095367,
+              "ms": 0.6999998092651367
+            },
+            {
+              "type": "input",
+              "at": 25356.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 25456.799999952316,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 25558.099999904633,
+              "ms": 1.3000001907348633
+            },
+            {
+              "type": "input",
+              "at": 25657.5,
+              "ms": 0.9000000953674316
+            },
+            {
+              "type": "input",
+              "at": 25756.700000047684,
+              "ms": 0.5999999046325684
+            },
+            {
+              "type": "change",
+              "at": 25857.200000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 26357.099999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 26456.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 26556.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 26656.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 26756.400000095367,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 26857.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 26957,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 27057.099999904633,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 27156.799999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 27256.400000095367,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "change",
+              "at": 27356.599999904633,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 27856.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 27956.5,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28056.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28157,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28257.5,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28358,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 28456.400000095367,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 28557.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28657.5,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 28756.900000095367,
+              "ms": 0.6999998092651367
+            },
+            {
+              "type": "change",
+              "at": 28856.200000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 29356.400000095367,
+              "ms": 1.1999998092651367
+            },
+            {
+              "type": "input",
+              "at": 29456.700000047684,
+              "ms": 0.20000004768371582
+            },
+            {
+              "type": "input",
+              "at": 29558,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 29656.599999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 29757.200000047684,
+              "ms": 1.0999999046325684
+            },
+            {
+              "type": "input",
+              "at": 29857.299999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 29957.700000047684,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 30057.299999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 30158.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 30256.700000047684,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "change",
+              "at": 30357.5,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 30857,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 30956.200000047684,
+              "ms": 0.8999998569488525
+            },
+            {
+              "type": "input",
+              "at": 31056.299999952316,
+              "ms": 1
+            },
+            {
+              "type": "input",
+              "at": 31157.099999904633,
+              "ms": 0.10000014305114746
+            },
+            {
+              "type": "input",
+              "at": 31256.700000047684,
+              "ms": 1.2999999523162842
+            },
+            {
+              "type": "input",
+              "at": 31357.900000095367,
+              "ms": 0.7999999523162842
+            },
+            {
+              "type": "input",
+              "at": 31457.400000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 31556.799999952316,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 31656.400000095367,
+              "ms": 0.09999990463256836
+            },
+            {
+              "type": "input",
+              "at": 31757,
+              "ms": 1.4000000953674316
+            },
+            {
+              "type": "change",
+              "at": 31856.900000095367,
+              "ms": 0
+            },
+            {
+              "type": "input",
+              "at": 32357.200000047684,
+              "ms": 0.09999990463256836
+            }
+          ]
+        },
+        "control": "blur",
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 0,
+          "enabled": true
+        },
+        "elapsedMs": 30001.299999952316,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99740011275714,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.699999999999818,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.800000000000182,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "start-screen": {
+            "frames": 1800,
+            "fps": 59.99740011275714,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          },
+          "main-screen": {
+            "frames": 1800,
+            "fps": 59.99740011275714,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.800000000000182,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 2.299999952316284,
+        "callbackWorkMaxMs": 4.3999998569488525,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1
+        },
+        "canvasBuffers": [
+          {
+            "width": 269,
+            "height": 583
+          },
+          {
+            "width": 269,
+            "height": 583
+          }
+        ],
+        "uiMetrics": "Частиц400FPS60CPU на экран1,90 мс"
+      },
+      {
+        "mode": "module-mobile",
+        "rate": 10,
+        "count": 200,
+        "size": 6,
+        "sizeVariation": 1,
+        "blur": 1,
+        "enabled": true,
+        "actualSettings": {
+          "count": 200,
+          "size": 6,
+          "sizeVariation": 1,
+          "blur": 1,
+          "speed": 28,
+          "wind": 6,
+          "sway": 10,
+          "opacity": 0.65,
+          "enabled": true
+        },
+        "elapsedMs": 30000.89999985695,
+        "clock": {
+          "frames": 1800,
+          "fps": 59.99820005428447,
+          "minRolling1sFps": 60,
+          "p50Ms": 16.69999999999891,
+          "p95Ms": 16.799999999999272,
+          "p99Ms": 16.80000000000109,
+          "maxMs": 16.80000000000291,
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0,
+          "gapDetails": []
+        },
+        "canvases": {
+          "scene": {
+            "frames": 1800,
+            "fps": 59.99820005428447,
+            "minRolling1sFps": 60,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.799999999999272,
+            "p99Ms": 16.80000000000109,
+            "maxMs": 16.80000000000291,
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0,
+            "gapDetails": []
+          }
+        },
+        "callbackWorkP95Ms": 1.6000001430511475,
+        "callbackWorkMaxMs": 2.700000047683716,
+        "longTasks": [],
+        "skippedCallbacks": [],
+        "visibility": "visible",
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "canvasBuffers": [
+          {
+            "width": 393,
+            "height": 852
+          }
+        ],
+        "interaction": null
+      }
+    ],
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M2 Ultra"
+    }
+  },
+  "prototypeData": "performance-blur-prototype-data.json"
+}

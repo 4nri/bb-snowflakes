@@ -48,14 +48,14 @@ export default async function runScenarios(page, options={}) {
     await page.setViewportSize(mobile?{width:393,height:852}:{width:1280,height:900});
     await cdp.send('Emulation.setDeviceMetricsOverride',{width:mobile?393:1280,height:mobile?852:900,deviceScaleFactor:mobile?3:1,mobile});
     await cdp.send('Emulation.setCPUThrottlingRate',{rate:scenario.rate});
-    const settings={count:scenario.count,size:scenario.size??2,sizeVariation:scenario.sizeVariation??.8,speed:scenario.count===110?85:28,wind:scenario.count===110?60:6,sway:10,opacity:.65,enabled:scenario.enabled};
-    const url=scenario.mode==='module-mobile'?BASE+'/tests/fixtures/snow-perf.html?'+new URLSearchParams(settings):BASE+'/#'+new URLSearchParams({snow:JSON.stringify({version:1,settings,area:'content'})});
+    const settings={count:scenario.count,size:scenario.size??2,sizeVariation:scenario.sizeVariation??.8,blur:scenario.blur??.4,speed:scenario.count===110?85:28,wind:scenario.count===110?60:6,sway:10,opacity:.65,enabled:scenario.enabled};
+    const url=scenario.mode==='module-mobile'?BASE+'/tests/fixtures/snow-perf.html?'+new URLSearchParams(settings):BASE+'/index.html#'+new URLSearchParams({snow:JSON.stringify({version:1,settings,area:'content'})});
     await page.goto('about:blank');
     await page.goto(url);
     await page.locator('canvas').first().waitFor();
     await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));
-    const actual=await page.evaluate(()=>window.effect?{...window.effect.settings}:{count:Number(document.querySelector('#count').value),size:Number(document.querySelector('#size').value),sizeVariation:Number(document.querySelector('#sizeVariation').value),enabled:document.querySelector('#enabled').checked});
-    if(actual.count!==scenario.count||actual.enabled!==scenario.enabled||actual.size!==settings.size||actual.sizeVariation!==settings.sizeVariation)throw new Error('Scenario did not apply: '+JSON.stringify({scenario,actual}));
+    const actual=await page.evaluate(()=>window.effect?{...window.effect.settings,blur:window.effect.settings.blur??0}:{count:Number(document.querySelector('#count').value),size:Number(document.querySelector('#size').value),sizeVariation:Number(document.querySelector('#sizeVariation').value),blur:Number(document.querySelector('#blur')?.value??0),enabled:document.querySelector('#enabled').checked});
+    if(actual.count!==scenario.count||actual.enabled!==scenario.enabled||actual.size!==settings.size||actual.sizeVariation!==settings.sizeVariation||actual.blur!==settings.blur)throw new Error('Scenario did not apply: '+JSON.stringify({scenario,actual}));
     await page.waitForTimeout(2000);
     const measured=await page.evaluate(async ({duration,interaction,control})=>{
       window.__bench={clock:[],draws:{},work:[],longTasks:[],skipped:[],drawCalls:0};

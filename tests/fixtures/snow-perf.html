@@ -5,6 +5,6 @@
 <script type="module">
 import {Snow} from '../../src/snow.js';
 const params=new URLSearchParams(location.search);
-window.effect=new Snow(document.querySelector('#scene'),{count:Number(params.get('count')??40),size:Number(params.get('size')??2),sizeVariation:Number(params.get('sizeVariation')??.8),speed:Number(params.get('speed')??28),wind:Number(params.get('wind')??6),sway:Number(params.get('sway')??10),enabled:params.get('enabled')!=='false'},{referenceWidth:393});
+window.effect=new Snow(document.querySelector('#scene'),{count:Number(params.get('count')??40),size:Number(params.get('size')??2),sizeVariation:Number(params.get('sizeVariation')??.8),blur:Number(params.get('blur')??.4),speed:Number(params.get('speed')??28),wind:Number(params.get('wind')??6),sway:Number(params.get('sway')??10),enabled:params.get('enabled')!=='false'},{referenceWidth:393});
 window.effect.setClip(98,818);
 </script></html>

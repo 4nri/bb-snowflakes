@@ -1,0 +1,33 @@
+{
+  "base": "http://127.0.0.1:4173/output/blur-baseline",
+  "duration": 15000,
+  "scenarios": [
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 40,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 0,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 1,
+      "blur": 0,
+      "enabled": true
+    },
+    {
+      "mode": "module-mobile",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 1,
+      "blur": 0,
+      "enabled": true
+    }
+  ]
+}

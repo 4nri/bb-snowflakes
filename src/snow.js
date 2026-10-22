@@ -1,6 +1,6 @@
 /** Dependency-free snow. All distances are CSS pixels at referenceWidth. */
-export const DEFAULTS = Object.freeze({count:40, size:2, sizeVariation:0.8, speed:28, wind:6, sway:10, opacity:0.65, enabled:true});
-const limits = {count:[0,200],size:[0.5,6],sizeVariation:[0,1],speed:[0,160],wind:[-100,100],sway:[0,60],opacity:[0,1]};
+export const DEFAULTS = Object.freeze({count:40, size:2, sizeVariation:0.8, blur:0.4, speed:28, wind:6, sway:10, opacity:0.65, enabled:true});
+const limits = {count:[0,200],size:[0.5,6],sizeVariation:[0,1],blur:[0,1],speed:[0,160],wind:[-100,100],sway:[0,60],opacity:[0,1]};
 export function normalize(input = {}) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new TypeError('Settings must be an object');
   const result = {...DEFAULTS};
@@ -13,6 +13,37 @@ export function normalize(input = {}) {
   return result;
 }
 function setDepth(p,variation) {p.depth=1-variation*(1-p.baseDepth);}
+// Eight cached soft edges; focus stays sharp between depths 0.45 and 0.8.
+export function blurLevelForDepth(depth,strength) {
+  const defocus=depth<0.45?(0.45-depth)/0.2*0.45:depth>0.8?(depth-0.8)/0.2:0;
+  return strength>0&&defocus>0?Math.max(1,Math.round(Math.min(1,defocus)*strength*8)):0;
+}
+const CELL=64,SPRITE_LEVELS=8;
+let spriteAtlas;
+function getSpriteAtlas() {
+  if(spriteAtlas)return spriteAtlas;
+  const canvas=document.createElement('canvas');canvas.width=CELL;canvas.height=CELL*SPRITE_LEVELS;
+  const ctx=canvas.getContext('2d');
+  for(let level=1;level<=SPRITE_LEVELS;level++){
+    const sigma=level/SPRITE_LEVELS*0.75,support=1+3*sigma;
+    const x=CELL/2,y=(level-0.5)*CELL,outer=CELL/2;
+    // A radial soft-disc approximation, baked once. No filter/shadowBlur in any frame.
+    const peak=1-Math.exp(-1/(2*sigma*sigma));
+    const gradient=ctx.createRadialGradient(x,y,0,x,y,outer);
+    const stop=(r,alpha)=>gradient.addColorStop(r/support,`rgba(255,255,255,${alpha*peak})`);
+    stop(0,1);
+    if(1-2*sigma>0)stop(1-2*sigma,.977);
+    if(1-sigma>0)stop(1-sigma,.841);
+    stop(1,.5);stop(1+sigma,.159);stop(1+2*sigma,.023);stop(support,0);
+    ctx.fillStyle=gradient;ctx.fillRect(0,(level-1)*CELL,CELL,CELL);
+  }
+  return spriteAtlas=canvas; // Shared by every Snow instance: 64 × 512 × 4 = 128 KiB.
+}
+function styleParticle(p,settings) {
+  p.radius=settings.size*p.depth;
+  p.blurLevel=blurLevelForDepth(p.depth,settings.blur);
+  p.extent=p.radius*(1+3*p.blurLevel/SPRITE_LEVELS*0.75);
+}
 export function createParticle(width,height,random=Math.random,sizeVariation=DEFAULTS.sizeVariation) {
   const p={x:random()*width,y:random()*height,baseDepth:0.25+random()*0.75,phase:random()*Math.PI*2};
   setDepth(p,sizeVariation);return p;
@@ -20,7 +51,7 @@ export function createParticle(width,height,random=Math.random,sizeVariation=DEF
 export function stepParticle(p,dt,settings,width,height,time) {
   p.x += settings.wind * p.depth * dt;
   p.y += settings.speed * p.depth * dt;
-  const margin = settings.size + settings.sway + 4;
+  const margin = settings.size*(1+2.25*(settings.blur||0)) + settings.sway + 4;
   if(p.y > height+margin) p.y = -margin;
   if(p.x > width+margin) p.x = -margin;
   if(p.x < -margin) p.x = width+margin;
@@ -75,15 +106,19 @@ export class Snow {
     this.syncParticles();this.draw();this.refresh();
   }
   syncParticles() {
-    while(this.particles.length<this.settings.count) this.particles.push(createParticle(this.width,this.height,Math.random,this.settings.sizeVariation));
+    while(this.particles.length<this.settings.count) {
+      const p=createParticle(this.width,this.height,Math.random,this.settings.sizeVariation);
+      styleParticle(p,this.settings);this.particles.push(p);
+    }
     this.particles.length=this.settings.count;
   }
   update(settings) {
     const wasActive=this.active;
-    const previousVariation=this.settings.sizeVariation;
+    const previous=this.settings;
     this.settings=normalize({...this.settings,...settings});this.syncParticles();
     // Cache the size/speed factor on control changes, never randomize per frame.
-    if(this.settings.sizeVariation!==previousVariation) for(const p of this.particles) setDepth(p,this.settings.sizeVariation);
+    if(this.settings.sizeVariation!==previous.sizeVariation||this.settings.size!==previous.size||this.settings.blur!==previous.blur)
+      for(const p of this.particles){setDepth(p,this.settings.sizeVariation);styleParticle(p,this.settings);}
     // An active animation draws the latest values on its next scheduled frame.
     if(!this.active||!wasActive)this.draw();
     if(this.active&&wasActive)schedule();else this.refresh();
@@ -121,12 +156,15 @@ export class Snow {
     ctx.save();ctx.beginPath();ctx.rect(0,top,this.width,Math.max(0,bottom-top));ctx.clip();
     ctx.globalAlpha=s.opacity;ctx.fillStyle='#fff';ctx.beginPath();
     for(const p of this.particles) {
-      if(p.y<top-s.size||p.y>bottom+s.size) continue;
+      if(p.y<top-p.extent||p.y>bottom+p.extent) continue;
       const x=p.x+Math.sin(this.time*0.7+p.phase)*s.sway*p.depth;
-      const radius=s.size*p.depth;
-      ctx.moveTo(x+radius,p.y);ctx.arc(x,p.y,radius,0,Math.PI*2);
+      if(p.blurLevel){
+        ctx.drawImage(getSpriteAtlas(),0,(p.blurLevel-1)*CELL,CELL,CELL,x-p.extent,p.y-p.extent,p.extent*2,p.extent*2);
+      }else{
+        ctx.moveTo(x+p.radius,p.y);ctx.arc(x,p.y,p.radius,0,Math.PI*2);
+      }
     }
-    ctx.fill(); // One fill call for every particle in this canvas.
+    ctx.fill(); // All sharp points still share one fill. At blur 0 this is the original path.
     ctx.restore();
   }
   destroy() {

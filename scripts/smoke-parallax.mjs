@@ -19,6 +19,7 @@ try{
  assert.equal(await page.locator('#sizeVariation').inputValue(),'0.8');
  assert.equal(await page.locator('#sizeVariation-value').innerText(),'80%');
  await page.locator('#pause').click();
+ await page.locator('#blur').fill('0');
  const set=async value=>{await page.locator('#sizeVariation').fill(String(value));await page.locator('#sizeVariation').dispatchEvent('change');};
  await set(0);
  const uniform=await page.evaluate(()=>window.drawn['main-screen']);

@@ -23,7 +23,7 @@ try {
 if(restored) preset=Object.keys(presets).find(key=>JSON.stringify(settings)===JSON.stringify(presets[key]))||null;
 const renderSamples=[];
 const effects=[$('start-screen'),$('main-screen')].map(el=>new Snow(el,settings,{referenceWidth:393,onFrame:ms=>{renderSamples.push(ms);if(renderSamples.length>240)renderSamples.shift();}}));
-const ranges=['count','size','sizeVariation','opacity','speed','wind','sway'];
+const ranges=['count','size','sizeVariation','blur','opacity','speed','wind','sway'];
 function payload(){return {version:1,settings:{...settings},area};}
 function notify(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
 const idleSave=typeof requestIdleCallback==='function'&&typeof cancelIdleCallback==='function';
@@ -36,7 +36,7 @@ function updateClips(){effects.forEach((e,i)=>e.setClip(98,area==='hero'?(i===0?
 function syncRange(key){
     const input=$(key);input.value=settings[key];
     input.style.setProperty('--progress',`${(settings[key]-Number(input.min))/(Number(input.max)-Number(input.min))*100}%`);
-    const value=key==='opacity'||key==='sizeVariation'?`${Math.round(settings[key]*100)}%`:key==='size'||key==='sway'?`${settings[key]} px`:key==='speed'||key==='wind'?`${settings[key]>0&&key==='wind'?'+':''}${settings[key]} px/с`:`${settings[key]}`;
+    const value=key==='opacity'||key==='sizeVariation'||key==='blur'?`${Math.round(settings[key]*100)}%`:key==='size'||key==='sway'?`${settings[key]} px`:key==='speed'||key==='wind'?`${settings[key]>0&&key==='wind'?'+':''}${settings[key]} px/с`:`${settings[key]}`;
     $(key+'-value').textContent=value;
     input.setAttribute('aria-valuetext',value);
 }

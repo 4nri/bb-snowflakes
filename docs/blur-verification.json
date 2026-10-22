@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "mobile": {
+    "slider": {
+      "x": 20,
+      "y": 657.59375,
+      "width": 353,
+      "height": 32,
+      "top": 657.59375,
+      "right": 373,
+      "bottom": 689.59375,
+      "left": 20
+    },
+    "phones": [
+      {
+        "x": 52.5,
+        "y": 165,
+        "width": 134,
+        "height": 290.5,
+        "top": 165,
+        "right": 186.5,
+        "bottom": 455.5,
+        "left": 52.5
+      },
+      {
+        "x": 206.5,
+        "y": 165,
+        "width": 134,
+        "height": 290.5,
+        "top": 165,
+        "right": 340.5,
+        "bottom": 455.5,
+        "left": 206.5
+      }
+    ],
+    "width": 393,
+    "height": 852,
+    "scrollWidth": 393
+  },
+  "pixels": {
+    "sharp": [
+      0,
+      0,
+      0
+    ],
+    "soft": [
+      7,
+      0,
+      30
+    ],
+    "before": [
+      {
+        "x": 70,
+        "y": 250,
+        "phase": 0.43998489161580945,
+        "baseDepth": 0.25,
+        "depth": 0.25
+      },
+      {
+        "x": 190,
+        "y": 250,
+        "phase": 5.2425321971069705,
+        "baseDepth": 0.625,
+        "depth": 0.625
+      },
+      {
+        "x": 310,
+        "y": 250,
+        "phase": 0.5217611795583935,
+        "baseDepth": 1,
+        "depth": 1
+      }
+    ],
+    "after": [
+      {
+        "x": 70,
+        "y": 250,
+        "phase": 0.43998489161580945,
+        "baseDepth": 0.25,
+        "depth": 0.25
+      },
+      {
+        "x": 190,
+        "y": 250,
+        "phase": 5.2425321971069705,
+        "baseDepth": 0.625,
+        "depth": 0.625
+      },
+      {
+        "x": 310,
+        "y": 250,
+        "phase": 0.5217611795583935,
+        "baseDepth": 1,
+        "depth": 1
+      }
+    ],
+    "levels": [
+      4,
+      0,
+      8
+    ],
+    "filter": "none",
+    "shadowBlur": 0
+  },
+  "errors": []
+}

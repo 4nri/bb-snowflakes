@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize,DEFAULTS,createParticle,stepParticle} from '../src/snow.js';
+import {normalize,DEFAULTS,createParticle,stepParticle,blurLevelForDepth} from '../src/snow.js';
 test('external settings cannot exceed the resource budget',()=>{
   const actual=normalize({count:100000,size:-1,speed:Infinity,wind:-1000,opacity:NaN,shape:'unknown',fps:144,enabled:'false'});
   assert.equal(actual.count,200);assert.equal(actual.size,0.5);assert.equal(actual.speed,DEFAULTS.speed);assert.equal(actual.wind,-100);assert.equal(actual.opacity,DEFAULTS.opacity);assert.equal(actual.shape,undefined);assert.equal(actual.fps,undefined);assert.equal(actual.enabled,true);
@@ -13,6 +13,18 @@ test('size variation accepts old settings and clamps untrusted values',()=>{
   for(const value of [NaN,Infinity,'1',null])assert.equal(normalize({sizeVariation:value}).sizeVariation,DEFAULTS.sizeVariation);
 });
 test('zero particles and zero motion remain valid',()=>{const result=normalize({count:0,speed:0,wind:0,sway:0,opacity:0,enabled:false});assert.equal(result.count,0);assert.equal(result.opacity,0);assert.equal(result.speed,0);assert.equal(result.enabled,false);});
+test('depth blur is bounded, focused in the middle and stronger near the camera',()=>{
+  assert.equal(normalize({}).blur,.4);
+  assert.equal(normalize({blur:-1}).blur,0);assert.equal(normalize({blur:10}).blur,1);
+  for(const blur of [NaN,Infinity,'1',null])assert.equal(normalize({blur}).blur,DEFAULTS.blur);
+  for(const depth of [.25,.45,.6,.8,1])assert.equal(blurLevelForDepth(depth,0),0);
+  for(const depth of [.45,.6,.8])assert.equal(blurLevelForDepth(depth,1),0);
+  assert.ok(blurLevelForDepth(.25,1)>0);
+  assert.ok(blurLevelForDepth(.25,1)<blurLevelForDepth(1,1));
+  assert.equal(blurLevelForDepth(1,1),8);
+  assert.ok(blurLevelForDepth(.4,.4)>0,"Default far particles also have a soft edge");
+  assert.equal(blurLevelForDepth(.625,.4),0);
+});
 test('particle generation stays inside the viewport',()=>{const p=createParticle(393,852,()=>0.5);assert.equal(p.x,196.5);assert.equal(p.y,426);assert.ok(p.depth>=.35&&p.depth<=1);});
 test('motion over one second matches at 30 and 60 fps',()=>{
   const a=createParticle(393,852,()=>.2),b={...a};
@@ -48,7 +60,7 @@ test('Snow stops rendering for reduced motion, hidden tabs and destroyed contain
   globalThis.cancelAnimationFrame=id=>pending.delete(id);
   function flush(time){const callbacks=[...pending.values()];pending.clear();callbacks.forEach(callback=>callback(time));}
   const container={append(){},getBoundingClientRect:()=>({width:393,height:852})};
-  const snow=new Snow(container,{count:2,size:4,sizeVariation:1,sway:0});
+  const snow=new Snow(container,{count:2,size:4,sizeVariation:1,sway:0,blur:0});
   assert.equal(snow.active,false);assert.equal(pending.size,0);
   const particles=[...snow.particles];particles[0].baseDepth=.25;particles[1].baseDepth=1;
   const positions=particles.map(p=>[p.x,p.y,p.phase,p.baseDepth]);

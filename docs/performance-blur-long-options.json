@@ -1,0 +1,79 @@
+{
+  "duration": 30000,
+  "scenarios": [
+    {
+      "mode": "demo-desktop",
+      "rate": 6,
+      "count": 40,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 0.4,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 6,
+      "count": 40,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 0,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 6,
+      "count": 0,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 0,
+      "enabled": false
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 6,
+      "count": 40,
+      "size": 2,
+      "sizeVariation": 0.8,
+      "blur": 0.4,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 1,
+      "blur": 1,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 0,
+      "blur": 1,
+      "enabled": true
+    },
+    {
+      "mode": "demo-desktop",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 1,
+      "blur": 0,
+      "enabled": true,
+      "interaction": "bursts",
+      "control": "blur"
+    },
+    {
+      "mode": "module-mobile",
+      "rate": 10,
+      "count": 200,
+      "size": 6,
+      "sizeVariation": 1,
+      "blur": 1,
+      "enabled": true
+    }
+  ]
+}
