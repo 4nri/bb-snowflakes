@@ -34,13 +34,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 [tabindex="0"]:focus-visible { outline-offset: -3px; }
 [hidden] { display: none !important; }
 .topbar { height: var(--header-height); padding: 0 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--surface); border-bottom: 1px solid var(--line); }
-.brand { display: inline-flex; align-items: center; gap: 22px; white-space: nowrap; }
-.brand strong { font-size: 21px; line-height: 1; font-weight: 700; font-style: italic; letter-spacing: -.9px; }
-.brand span { font-size: 14px; line-height: 20px; color: var(--muted); }
-.top-actions { display: flex; align-items: center; gap: 24px; }
-.source-link { font-size: 13px; line-height: 20px; }
-.figma-short, .caption-short { display: none; }
-.source-link:hover, .secondary-actions a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand img { display: block; width: auto; height: 32px; }
+.top-actions { display: flex; align-items: center; }
+.caption-short { display: none; }
+.secondary-actions a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .button, select { border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--text); }
 .button { min-height: 38px; padding: 8px 16px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; line-height: 20px; font-weight: 500; white-space: nowrap; }
 .button:hover { border-color: #7b8791; background: #f5f7f8; }
@@ -122,10 +120,7 @@ input[type="range"]::-moz-range-thumb { width: 11px; height: 11px; border: 2px s
 @media (max-width: 760px) {
   :root { --header-height: 56px; }
   .topbar { padding-inline: 16px; gap: 12px; }
-  .brand strong { font-size: 19px; }
-  .brand span { display: none; }
-  .top-actions { gap: 12px; }
-  .source-link { font-size: 12px; }
+  .brand img { height: 28px; }
   #share { min-height: 36px; padding-inline: 11px; font-size: 12px; }
   .layout { grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(0, 3fr) minmax(0, 2fr); }
   .workspace-toolbar { min-height: 57px; padding: 10px 16px; gap: 10px; }
@@ -163,4 +158,4 @@ input[type="range"]::-moz-range-thumb { width: 11px; height: 11px; border: 2px s
   .motion-notice { left: 16px; right: 16px; bottom: 72px; font-size: 12px; padding: 9px 12px; }
   .workspace:fullscreen .screen-card, .workspace.presentation .screen-card { grid-template-rows: 44px auto; }
 }
-@media (max-width: 370px) { .figma-full { display: none; } .figma-short { display: inline; } .playback { gap: 8px; } .metrics { gap: 10px; } .playback-state { max-width: 86px; white-space: normal; line-height: 18px; } }
+@media (max-width: 370px) { .playback { gap: 8px; } .metrics { gap: 10px; } .playback-state { max-width: 86px; white-space: normal; line-height: 18px; } }
