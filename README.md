@@ -132,3 +132,9 @@ PERF_OPTIONS_FILE=docs/performance-long-options.json PERF_OUTPUT=output/playwrig
 Замер фиксирует фактические команды отрисовки Canvas и отдельный кадровый цикл браузера. CPU замедляется через `Emulation.setCPUThrottlingRate`, а не через искусственную задержку анимации. Подробные границы метода указаны в отчёте.
 
 Проверка завершения жестов и сохранения настроек: `PERF_OPTIONS_FILE=docs/performance-bursts-options.json PERF_OUTPUT=output/playwright/cpu-bursts.json npm run perf`.
+
+## Сравнение со старым проектом
+
+Изучен [4nri/bb_snowflakes](https://github.com/4nri/bb_snowflakes) от 2025 года. На стандартных настройках текущий эффект требует меньше CPU-времени главным образом за счёт 40 точек вместо 3200 и одного слоя вместо трёх. При одинаковых 200 точках расходы CPU практически совпадают.
+
+[Подробный отчёт, условия и повторение замеров](docs/legacy-comparison.md) · [Полные результаты](docs/legacy-comparison-data.json).

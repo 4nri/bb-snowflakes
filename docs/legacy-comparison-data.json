@@ -1,0 +1,3708 @@
+{
+  "summary": {
+    "defaultMeanCpuRatio": 27.45823507439714,
+    "defaultP95CpuRatio": 6.666667726304964,
+    "matchedMeanCpuReductionPercent": 1.8726894866270105,
+    "matchedLegacyMeanMs": 0.2209431359572814,
+    "matchedCurrentMeanMs": 0.21680555707878538,
+    "nominalRgbaBytes": {
+      "legacy": 4018032,
+      "current": 1339344
+    },
+    "currentCommit": "6862096db9f6208405cff7840d7dfe772a10d7c2"
+  },
+  "matrix": {
+    "date": "2026-10-22T11:16:07.552Z",
+    "legacy": {
+      "repository": "4nri/bb_snowflakes",
+      "commit": "c492fa2f979a01b5aea95fe28f821f46827b445e",
+      "sha256": "89a9a109b51f2bbaf297a4bd9241bc6d3dc4beb0eb10d3f438e30639666aaeb0",
+      "htmlBytes": 14639,
+      "htmlGzip": 3315,
+      "scriptBytes": 7207,
+      "scriptGzip": 1945
+    },
+    "current": {
+      "repository": "4nri/bb-snowflakes",
+      "sha256": "c78470ac58dfb30b66e07502f7c4bb7b4a00293d73fac8e604af1bf85e4927d1",
+      "scriptBytes": 6915,
+      "scriptGzip": 2517
+    },
+    "host": {
+      "cpu": "Apple M2 Ultra",
+      "arch": "arm64"
+    },
+    "durationMs": 8000,
+    "results": [
+      {
+        "version": "legacy",
+        "profile": "original",
+        "count": 3200,
+        "rate": 1,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": false
+        },
+        "elapsedMs": 8001.299999952316,
+        "clock": {
+          "frames": 381,
+          "fps": 47.617262195177105,
+          "minRolling1sFps": 39,
+          "intervalMs": {
+            "n": 380,
+            "mean": 21.008157894736843,
+            "p50": 16.699999999999818,
+            "p95": 50,
+            "p99": 66.69999999999982,
+            "max": 100,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 73,
+          "gapsOver50ms": 8
+        },
+        "effect": {
+          "frames": 381,
+          "fps": 47.617262195177105,
+          "minRolling1sFps": 39,
+          "intervalMs": {
+            "n": 380,
+            "mean": 21.008157894736843,
+            "p50": 16.699999999999818,
+            "p95": 50,
+            "p99": 66.69999999999982,
+            "max": 100,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 73,
+          "gapsOver50ms": 8
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 381,
+            "fps": 47.617262195177105,
+            "minRolling1sFps": 39,
+            "intervalMs": {
+              "n": 380,
+              "mean": 21.008157894736843,
+              "p50": 16.699999999999818,
+              "p95": 50,
+              "p99": 66.69999999999982,
+              "max": 100,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 73,
+            "gapsOver50ms": 8
+          },
+          "middleLayer": {
+            "frames": 381,
+            "fps": 47.617262195177105,
+            "minRolling1sFps": 39,
+            "intervalMs": {
+              "n": 380,
+              "mean": 21.008157894736843,
+              "p50": 16.699999999999818,
+              "p95": 50,
+              "p99": 66.69999999999982,
+              "max": 100,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 73,
+            "gapsOver50ms": 8
+          },
+          "frontLayer": {
+            "frames": 381,
+            "fps": 47.617262195177105,
+            "minRolling1sFps": 39,
+            "intervalMs": {
+              "n": 380,
+              "mean": 21.008157894736843,
+              "p50": 16.699999999999818,
+              "p95": 50,
+              "p99": 66.69999999999982,
+              "max": 100,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 73,
+            "gapsOver50ms": 8
+          }
+        },
+        "callbackWorkMs": {
+          "n": 381,
+          "mean": 0.6409448857695412,
+          "p50": 0.5,
+          "p95": 1.2000000476837158,
+          "p99": 1.5,
+          "max": 2,
+          "sum": 244.2000014781952
+        },
+        "cpuWorkMsPerSecond": 30.52004067834608,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "original",
+        "count": 40,
+        "rate": 1,
+        "actual": {
+          "total": 40,
+          "settings": {
+            "count": 40,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.700000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.994750458977244,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.994750458977244,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.994750458977244,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.06145833233992259,
+          "p50": 0.09999990463256836,
+          "p95": 0.20000004768371582,
+          "p99": 0.20000004768371582,
+          "max": 0.2999999523162842,
+          "sum": 29.499999523162842
+        },
+        "cpuWorkMsPerSecond": 3.6871773123585467,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-blur",
+        "count": 200,
+        "rate": 1,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8001.200000047684,
+        "clock": {
+          "frames": 472,
+          "fps": 58.99115132694934,
+          "minRolling1sFps": 53,
+          "intervalMs": {
+            "n": 471,
+            "mean": 16.94883227176221,
+            "p50": 16.699999999999818,
+            "p95": 16.800000000000182,
+            "p99": 33.30000000000018,
+            "max": 50,
+            "sum": 7982.900000000001
+          },
+          "gapsOver25ms": 7,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 472,
+          "fps": 58.99115132694934,
+          "minRolling1sFps": 53,
+          "intervalMs": {
+            "n": 471,
+            "mean": 16.94883227176221,
+            "p50": 16.699999999999818,
+            "p95": 16.800000000000182,
+            "p99": 33.30000000000018,
+            "max": 50,
+            "sum": 7982.900000000001
+          },
+          "gapsOver25ms": 7,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 472,
+            "fps": 58.99115132694934,
+            "minRolling1sFps": 53,
+            "intervalMs": {
+              "n": 471,
+              "mean": 16.94883227176221,
+              "p50": 16.699999999999818,
+              "p95": 16.800000000000182,
+              "p99": 33.30000000000018,
+              "max": 50,
+              "sum": 7982.900000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 472,
+            "fps": 58.99115132694934,
+            "minRolling1sFps": 53,
+            "intervalMs": {
+              "n": 471,
+              "mean": 16.94883227176221,
+              "p50": 16.699999999999818,
+              "p95": 16.800000000000182,
+              "p99": 33.30000000000018,
+              "max": 50,
+              "sum": 7982.900000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 472,
+            "fps": 58.99115132694934,
+            "minRolling1sFps": 53,
+            "intervalMs": {
+              "n": 471,
+              "mean": 16.94883227176221,
+              "p50": 16.699999999999818,
+              "p95": 16.800000000000182,
+              "p99": 33.30000000000018,
+              "max": 50,
+              "sum": 7982.900000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 472,
+          "mean": 0.08453389648663795,
+          "p50": 0.09999990463256836,
+          "p95": 0.20000004768371582,
+          "p99": 0.2999999523162842,
+          "max": 0.40000009536743164,
+          "sum": 39.899999141693115
+        },
+        "cpuWorkMsPerSecond": 4.986751879899931,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 1,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8001.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99100134944001,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665762004175367,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.9000000000015
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99100134944001,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665762004175367,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.9000000000015
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99100134944001,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665762004175367,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7982.9000000000015
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.0904166708389918,
+          "p50": 0.09999990463256836,
+          "p95": 0.20000004768371582,
+          "p99": 0.2999999523162842,
+          "max": 0.3000001907348633,
+          "sum": 43.400002002716064
+        },
+        "cpuWorkMsPerSecond": 5.42418662231383,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 1,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8001,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99250093738283,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99250093738283,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.05874999264876048,
+          "p50": 0.09999990463256836,
+          "p95": 0.10000014305114746,
+          "p99": 0.20000004768371582,
+          "max": 0.20000004768371582,
+          "sum": 28.19999647140503
+        },
+        "cpuWorkMsPerSecond": 3.524558989051997,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 40,
+        "rate": 1,
+        "actual": {
+          "counts": [
+            25,
+            13,
+            2
+          ],
+          "total": 40,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.799999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99400060029756,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99400060029756,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.031666672229766844,
+          "p50": 0,
+          "p95": 0.10000014305114746,
+          "p99": 0.20000004768371582,
+          "max": 0.20000004768371582,
+          "sum": 15.200002670288086
+        },
+        "cpuWorkMsPerSecond": 1.8998103527620582,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "original",
+        "count": 3200,
+        "rate": 6,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": false
+        },
+        "elapsedMs": 8000.5,
+        "clock": {
+          "frames": 473,
+          "fps": 59.1213049184426,
+          "minRolling1sFps": 57,
+          "intervalMs": {
+            "n": 472,
+            "mean": 16.913135593220343,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999727,
+            "p99": 33.30000000000018,
+            "max": 33.40000000000009,
+            "sum": 7983.000000000001
+          },
+          "gapsOver25ms": 7,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 473,
+          "fps": 59.1213049184426,
+          "minRolling1sFps": 57,
+          "intervalMs": {
+            "n": 472,
+            "mean": 16.913135593220343,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999727,
+            "p99": 33.30000000000018,
+            "max": 33.40000000000009,
+            "sum": 7983.000000000001
+          },
+          "gapsOver25ms": 7,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 473,
+            "fps": 59.1213049184426,
+            "minRolling1sFps": 57,
+            "intervalMs": {
+              "n": 472,
+              "mean": 16.913135593220343,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999727,
+              "p99": 33.30000000000018,
+              "max": 33.40000000000009,
+              "sum": 7983.000000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 473,
+            "fps": 59.1213049184426,
+            "minRolling1sFps": 57,
+            "intervalMs": {
+              "n": 472,
+              "mean": 16.913135593220343,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999727,
+              "p99": 33.30000000000018,
+              "max": 33.40000000000009,
+              "sum": 7983.000000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 473,
+            "fps": 59.1213049184426,
+            "minRolling1sFps": 57,
+            "intervalMs": {
+              "n": 472,
+              "mean": 16.913135593220343,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999727,
+              "p99": 33.30000000000018,
+              "max": 33.40000000000009,
+              "sum": 7983.000000000001
+            },
+            "gapsOver25ms": 7,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 473,
+          "mean": 3.083932349848193,
+          "p50": 3.0999999046325684,
+          "p95": 3.799999952316284,
+          "p99": 4.200000047683716,
+          "max": 4.299999952316284,
+          "sum": 1458.7000014781952
+        },
+        "cpuWorkMsPerSecond": 182.32610480322418,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "original",
+        "count": 40,
+        "rate": 6,
+        "actual": {
+          "total": 40,
+          "settings": {
+            "count": 40,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.099999904633,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666388308977034,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.199999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666388308977034,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.199999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99925001009012,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666388308977034,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.199999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.09208333343267441,
+          "p50": 0,
+          "p95": 0.40000009536743164,
+          "p99": 1.1000001430511475,
+          "max": 1.5,
+          "sum": 44.200000047683716
+        },
+        "cpuWorkMsPerSecond": 5.524930944389522,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-blur",
+        "count": 200,
+        "rate": 6,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.399999856949,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99700015106528,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99700015106528,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.14333333124717076,
+          "p50": 0.09999990463256836,
+          "p95": 0.6999998092651367,
+          "p99": 1.1000001430511475,
+          "max": 1.3000001907348633,
+          "sum": 68.79999899864197
+        },
+        "cpuWorkMsPerSecond": 8.599569896489195,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 6,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.099999904633,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99925001009012,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.1535416637857755,
+          "p50": 0.09999990463256836,
+          "p95": 0.7000000476837158,
+          "p99": 1.2000000476837158,
+          "max": 1.2999999523162842,
+          "sum": 73.69999861717224
+        },
+        "cpuWorkMsPerSecond": 9.212384672447945,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 6,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.998500037141454,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.998500037141454,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.1
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.998500037141454,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.1
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.14562499523162842,
+          "p50": 0.09999990463256836,
+          "p95": 0.5999999046325684,
+          "p99": 1.1999998092651367,
+          "max": 1.3000001907348633,
+          "sum": 69.89999771118164
+        },
+        "cpuWorkMsPerSecond": 8.737281281813582,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 40,
+        "rate": 6,
+        "actual": {
+          "counts": [
+            25,
+            13,
+            2
+          ],
+          "total": 40,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.900000095367,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99325075857448,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99325075857448,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99325075857448,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99325075857448,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99325075857448,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.05937500298023224,
+          "p50": 0,
+          "p95": 0.2999999523162842,
+          "p99": 0.8000001907348633,
+          "max": 1.2000000476837158,
+          "sum": 28.500001430511475
+        },
+        "cpuWorkMsPerSecond": 3.56209944258418,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "original",
+        "count": 3200,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": false
+        },
+        "elapsedMs": 8002,
+        "clock": {
+          "frames": 440,
+          "fps": 54.98625343664084,
+          "minRolling1sFps": 49,
+          "intervalMs": {
+            "n": 439,
+            "mean": 18.184738041002277,
+            "p50": 16.699999999999818,
+            "p95": 33.30000000000018,
+            "p99": 33.400000000000546,
+            "max": 50.100000000000364,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 38,
+          "gapsOver50ms": 1
+        },
+        "effect": {
+          "frames": 440,
+          "fps": 54.98625343664084,
+          "minRolling1sFps": 49,
+          "intervalMs": {
+            "n": 439,
+            "mean": 18.184738041002277,
+            "p50": 16.699999999999818,
+            "p95": 33.30000000000018,
+            "p99": 33.400000000000546,
+            "max": 50.100000000000364,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 38,
+          "gapsOver50ms": 1
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 440,
+            "fps": 54.98625343664084,
+            "minRolling1sFps": 49,
+            "intervalMs": {
+              "n": 439,
+              "mean": 18.184738041002277,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 50.100000000000364,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 38,
+            "gapsOver50ms": 1
+          },
+          "middleLayer": {
+            "frames": 440,
+            "fps": 54.98625343664084,
+            "minRolling1sFps": 49,
+            "intervalMs": {
+              "n": 439,
+              "mean": 18.184738041002277,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 50.100000000000364,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 38,
+            "gapsOver50ms": 1
+          },
+          "frontLayer": {
+            "frames": 440,
+            "fps": 54.98625343664084,
+            "minRolling1sFps": 49,
+            "intervalMs": {
+              "n": 439,
+              "mean": 18.184738041002277,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 50.100000000000364,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 38,
+            "gapsOver50ms": 1
+          }
+        },
+        "callbackWorkMs": {
+          "n": 440,
+          "mean": 4.961136359518225,
+          "p50": 5,
+          "p95": 5.900000095367432,
+          "p99": 6.700000047683716,
+          "max": 7.299999952316284,
+          "sum": 2182.899998188019
+        },
+        "cpuWorkMsPerSecond": 272.7943011982028,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "original",
+        "count": 40,
+        "rate": 10,
+        "actual": {
+          "total": 40,
+          "settings": {
+            "count": 40,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8001.700000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98725270844191,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.98725270844191,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.98725270844191,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.08541666467984517,
+          "p50": 0,
+          "p95": 0.5,
+          "p99": 1.3999998569488525,
+          "max": 1.8000001907348633,
+          "sum": 40.999999046325684
+        },
+        "cpuWorkMsPerSecond": 5.123911049662117,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-blur",
+        "count": 200,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.300000190735,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99775008294143,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99775008294143,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99775008294143,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99775008294143,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99775008294143,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.20624999503294628,
+          "p50": 0.09999990463256836,
+          "p95": 0.9000000953674316,
+          "p99": 1.6999998092651367,
+          "max": 2.6000001430511475,
+          "sum": 98.99999761581421
+        },
+        "cpuWorkMsPerSecond": 12.374535656594622,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 10,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8001.5,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98875210897957,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.98875210897957,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.98875210897957,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.18625000218550364,
+          "p50": 0.09999990463256836,
+          "p95": 0.8000001907348633,
+          "p99": 1.7999999523162842,
+          "max": 2.5999999046325684,
+          "sum": 89.40000104904175
+        },
+        "cpuWorkMsPerSecond": 11.17290521140308,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.399999856949,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99700015106528,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99700015106528,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99700015106528,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.19187499930461246,
+          "p50": 0.09999990463256836,
+          "p95": 0.7999999523162842,
+          "p99": 1.7999999523162842,
+          "max": 2.700000047683716,
+          "sum": 92.09999966621399
+        },
+        "cpuWorkMsPerSecond": 11.511924362264486,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 40,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            25,
+            13,
+            2
+          ],
+          "total": 40,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8001.200000047684,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99100134944001,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99100134944001,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.666179540709813,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.099999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99100134944001,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99100134944001,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99100134944001,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.666179540709813,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.099999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.08187499791383743,
+          "p50": 0,
+          "p95": 0.5,
+          "p99": 0.9000000953674316,
+          "max": 1.7000000476837158,
+          "sum": 39.29999899864197
+        },
+        "cpuWorkMsPerSecond": 4.9117631103344195,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 10,
+        "repeat": 1,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.799999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99400060029756,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99400060029756,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99400060029756,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7982.999999999999
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.2050000046690305,
+          "p50": 0.09999990463256836,
+          "p95": 0.9000000953674316,
+          "p99": 1.6999998092651367,
+          "max": 1.8999998569488525,
+          "sum": 98.40000224113464
+        },
+        "cpuWorkMsPerSecond": 12.298770403174819,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 10,
+        "repeat": 1,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.299999952316,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99775008472944,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.66597077244259,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.000000000001
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99775008472944,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.66597077244259,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983.000000000001
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99775008472944,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.66597077244259,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983.000000000001
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.24562499672174454,
+          "p50": 0.09999990463256836,
+          "p95": 1,
+          "p99": 1.8000001907348633,
+          "max": 2.200000047683716,
+          "sum": 117.89999842643738
+        },
+        "cpuWorkMsPerSecond": 14.736947167873716,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 10,
+        "repeat": 2,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8001.5,
+        "clock": {
+          "frames": 480,
+          "fps": 59.98875210897957,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.98875210897957,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.98875210897957,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.22416666944821675,
+          "p50": 0.09999990463256836,
+          "p95": 1,
+          "p99": 1.5999999046325684,
+          "max": 2,
+          "sum": 107.60000133514404
+        },
+        "cpuWorkMsPerSecond": 13.447478764624638,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 10,
+        "repeat": 2,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8001.5,
+        "clock": {
+          "frames": 481,
+          "fps": 60.113728675873276,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 480,
+            "mean": 16.666041666666665,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7999.7
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 481,
+          "fps": 60.113728675873276,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 480,
+            "mean": 16.666041666666665,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7999.7
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 481,
+            "fps": 60.113728675873276,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.666041666666665,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.7
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 481,
+            "fps": 60.113728675873276,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.666041666666665,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.7
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 481,
+            "fps": 60.113728675873276,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.666041666666665,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.7
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 481,
+          "mean": 0.2509355520260309,
+          "p50": 0.09999990463256836,
+          "p95": 1.1000001430511475,
+          "p99": 2.0999999046325684,
+          "max": 2.5,
+          "sum": 120.70000052452087
+        },
+        "cpuWorkMsPerSecond": 15.084671689623304,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 200,
+        "rate": 10,
+        "repeat": 3,
+        "actual": {
+          "counts": [
+            125,
+            63,
+            12
+          ],
+          "total": 200,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8002.100000143051,
+        "clock": {
+          "frames": 481,
+          "fps": 60.10922132832648,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 480,
+            "mean": 16.66604166666667,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7999.700000000001
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 481,
+          "fps": 60.10922132832648,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 480,
+            "mean": 16.66604166666667,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7999.700000000001
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 481,
+            "fps": 60.10922132832648,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.66604166666667,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.700000000001
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 481,
+            "fps": 60.10922132832648,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.66604166666667,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.700000000001
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 481,
+            "fps": 60.10922132832648,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 480,
+              "mean": 16.66604166666667,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000109,
+              "sum": 7999.700000000001
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 481,
+          "mean": 0.2068607053736887,
+          "p50": 0.09999990463256836,
+          "p95": 0.9000000953674316,
+          "p99": 1.7000000476837158,
+          "max": 2,
+          "sum": 99.49999928474426
+        },
+        "cpuWorkMsPerSecond": 12.434235923440788,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 200,
+        "rate": 10,
+        "repeat": 3,
+        "actual": {
+          "total": 200,
+          "settings": {
+            "count": 200,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.5,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99625023436035,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665762004175363,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.80000000000109,
+            "max": 16.80000000000109,
+            "sum": 7982.9
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99625023436035,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665762004175363,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.80000000000109,
+            "max": 16.80000000000109,
+            "sum": 7982.9
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 480,
+            "fps": 59.99625023436035,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665762004175363,
+              "p50": 16.699999999999818,
+              "p95": 16.799999999999272,
+              "p99": 16.80000000000109,
+              "max": 16.80000000000109,
+              "sum": 7982.9
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.1806250050663948,
+          "p50": 0.09999990463256836,
+          "p95": 0.7999999523162842,
+          "p99": 1.5999999046325684,
+          "max": 1.9000000953674316,
+          "sum": 86.7000024318695
+        },
+        "cpuWorkMsPerSecond": 10.83682300254603,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "matched-plain",
+        "count": 0,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            0,
+            0,
+            0
+          ],
+          "total": 0,
+          "frontFilter": "none",
+          "controlsHidden": true
+        },
+        "elapsedMs": 8000.099999904633,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 480,
+          "fps": 59.99925001009012,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.800000000000182,
+            "max": 16.800000000000182,
+            "sum": 7983
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 480,
+            "fps": 59.99925001009012,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 480,
+            "fps": 59.99925001009012,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 480,
+            "fps": 59.99925001009012,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 479,
+              "mean": 16.665970772442588,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.800000000000182,
+              "max": 16.800000000000182,
+              "sum": 7983
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 480,
+          "mean": 0.047500002880891165,
+          "p50": 0,
+          "p95": 0.5,
+          "p99": 0.7000000476837158,
+          "max": 1.4000000953674316,
+          "sum": 22.80000138282776
+        },
+        "cpuWorkMsPerSecond": 2.8499645483305898,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "matched",
+        "count": 0,
+        "rate": 10,
+        "actual": {
+          "total": 0,
+          "settings": {
+            "count": 0,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 8000.899999856949,
+        "clock": {
+          "frames": 480,
+          "fps": 59.99325076036222,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 479,
+            "mean": 16.665970772442588,
+            "p50": 16.699999999999818,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000109,
+            "sum": 7982.999999999999
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 0,
+          "fps": 0,
+          "minRolling1sFps": 0,
+          "intervalMs": {
+            "n": 0,
+            "mean": 0,
+            "p50": 0,
+            "p95": 0,
+            "p99": 0,
+            "max": 0,
+            "sum": 0
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {},
+        "callbackWorkMs": {
+          "n": 0,
+          "mean": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "sum": 0
+        },
+        "cpuWorkMsPerSecond": 0,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      }
+    ],
+    "browser": "156.0.8078.48"
+  },
+  "defaults": {
+    "date": "2026-10-22T11:21:24.431Z",
+    "legacy": {
+      "repository": "4nri/bb_snowflakes",
+      "commit": "c492fa2f979a01b5aea95fe28f821f46827b445e",
+      "sha256": "89a9a109b51f2bbaf297a4bd9241bc6d3dc4beb0eb10d3f438e30639666aaeb0",
+      "htmlBytes": 14639,
+      "htmlGzip": 3315,
+      "scriptBytes": 7207,
+      "scriptGzip": 1945
+    },
+    "current": {
+      "repository": "4nri/bb-snowflakes",
+      "sha256": "c78470ac58dfb30b66e07502f7c4bb7b4a00293d73fac8e604af1bf85e4927d1",
+      "scriptBytes": 6915,
+      "scriptGzip": 2517
+    },
+    "host": {
+      "cpu": "Apple M2 Ultra",
+      "arch": "arm64"
+    },
+    "durationMs": 20000,
+    "results": [
+      {
+        "version": "legacy",
+        "profile": "default-renderer",
+        "count": 3200,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": true
+        },
+        "elapsedMs": 20005.60000014305,
+        "clock": {
+          "frames": 1200,
+          "fps": 59.98320470225433,
+          "minRolling1sFps": 59,
+          "intervalMs": {
+            "n": 1199,
+            "mean": 16.67989991659716,
+            "p50": 16.69999999999891,
+            "p95": 16.799999999999272,
+            "p99": 16.80000000000109,
+            "max": 33.400000000001455,
+            "sum": 19999.199999999997
+          },
+          "gapsOver25ms": 1,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 1200,
+          "fps": 59.98320470225433,
+          "minRolling1sFps": 59,
+          "intervalMs": {
+            "n": 1199,
+            "mean": 16.67989991659716,
+            "p50": 16.69999999999891,
+            "p95": 16.799999999999272,
+            "p99": 16.80000000000109,
+            "max": 33.400000000001455,
+            "sum": 19999.199999999997
+          },
+          "gapsOver25ms": 1,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 1200,
+            "fps": 59.98320470225433,
+            "minRolling1sFps": 59,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.67989991659716,
+              "p50": 16.69999999999891,
+              "p95": 16.799999999999272,
+              "p99": 16.80000000000109,
+              "max": 33.400000000001455,
+              "sum": 19999.199999999997
+            },
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 1200,
+            "fps": 59.98320470225433,
+            "minRolling1sFps": 59,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.67989991659716,
+              "p50": 16.69999999999891,
+              "p95": 16.799999999999272,
+              "p99": 16.80000000000109,
+              "max": 33.400000000001455,
+              "sum": 19999.199999999997
+            },
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 1200,
+            "fps": 59.98320470225433,
+            "minRolling1sFps": 59,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.67989991659716,
+              "p50": 16.69999999999891,
+              "p95": 16.799999999999272,
+              "p99": 16.80000000000109,
+              "max": 33.400000000001455,
+              "sum": 19999.199999999997
+            },
+            "gapsOver25ms": 1,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 1200,
+          "mean": 4.986166666150093,
+          "p50": 5,
+          "p95": 6,
+          "p99": 6.599999904632568,
+          "max": 7.900000095367432,
+          "sum": 5983.399999380112
+        },
+        "cpuWorkMsPerSecond": 299.0862558152381,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "current",
+        "profile": "original",
+        "count": 40,
+        "rate": 10,
+        "actual": {
+          "total": 40,
+          "settings": {
+            "count": 40,
+            "size": 2,
+            "speed": 28,
+            "wind": 6,
+            "sway": 10,
+            "opacity": 0.65,
+            "enabled": true
+          }
+        },
+        "elapsedMs": 20000.299999952316,
+        "clock": {
+          "frames": 1201,
+          "fps": 60.04909926365421,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 1200,
+            "mean": 16.666,
+            "p50": 16.69999999999891,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000291,
+            "sum": 19999.2
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 1201,
+          "fps": 60.04909926365421,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 1200,
+            "mean": 16.666,
+            "p50": 16.69999999999891,
+            "p95": 16.799999999999272,
+            "p99": 16.800000000000182,
+            "max": 16.80000000000291,
+            "sum": 19999.2
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "scene": {
+            "frames": 1201,
+            "fps": 60.04909926365421,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 1200,
+              "mean": 16.666,
+              "p50": 16.69999999999891,
+              "p95": 16.799999999999272,
+              "p99": 16.800000000000182,
+              "max": 16.80000000000291,
+              "sum": 19999.2
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 1201,
+          "mean": 0.18101582221444898,
+          "p50": 0,
+          "p95": 0.8999998569488525,
+          "p99": 2,
+          "max": 2.3000001907348633,
+          "sum": 217.40000247955322
+        },
+        "cpuWorkMsPerSecond": 10.86983707644743,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "original",
+        "count": 3200,
+        "rate": 10,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": false
+        },
+        "elapsedMs": 20003.400000095367,
+        "clock": {
+          "frames": 1112,
+          "fps": 55.59054960630185,
+          "minRolling1sFps": 44,
+          "intervalMs": {
+            "n": 1111,
+            "mean": 18.0011701170117,
+            "p50": 16.699999999999818,
+            "p95": 33.30000000000018,
+            "p99": 33.400000000000546,
+            "max": 66.60000000000036,
+            "sum": 19999.3
+          },
+          "gapsOver25ms": 78,
+          "gapsOver50ms": 2
+        },
+        "effect": {
+          "frames": 1112,
+          "fps": 55.59054960630185,
+          "minRolling1sFps": 44,
+          "intervalMs": {
+            "n": 1111,
+            "mean": 18.0011701170117,
+            "p50": 16.699999999999818,
+            "p95": 33.30000000000018,
+            "p99": 33.400000000000546,
+            "max": 66.60000000000036,
+            "sum": 19999.3
+          },
+          "gapsOver25ms": 78,
+          "gapsOver50ms": 2
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 1112,
+            "fps": 55.59054960630185,
+            "minRolling1sFps": 44,
+            "intervalMs": {
+              "n": 1111,
+              "mean": 18.0011701170117,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 66.60000000000036,
+              "sum": 19999.3
+            },
+            "gapsOver25ms": 78,
+            "gapsOver50ms": 2
+          },
+          "middleLayer": {
+            "frames": 1112,
+            "fps": 55.59054960630185,
+            "minRolling1sFps": 44,
+            "intervalMs": {
+              "n": 1111,
+              "mean": 18.0011701170117,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 66.60000000000036,
+              "sum": 19999.3
+            },
+            "gapsOver25ms": 78,
+            "gapsOver50ms": 2
+          },
+          "frontLayer": {
+            "frames": 1112,
+            "fps": 55.59054960630185,
+            "minRolling1sFps": 44,
+            "intervalMs": {
+              "n": 1111,
+              "mean": 18.0011701170117,
+              "p50": 16.699999999999818,
+              "p95": 33.30000000000018,
+              "p99": 33.400000000000546,
+              "max": 66.60000000000036,
+              "sum": 19999.3
+            },
+            "gapsOver25ms": 78,
+            "gapsOver50ms": 2
+          }
+        },
+        "callbackWorkMs": {
+          "n": 1112,
+          "mean": 4.9439748223308175,
+          "p50": 5,
+          "p95": 6,
+          "p99": 6.6000001430511475,
+          "max": 7.200000047683716,
+          "sum": 5497.7000024318695
+        },
+        "cpuWorkMsPerSecond": 274.83827761308874,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      },
+      {
+        "version": "legacy",
+        "profile": "default-renderer",
+        "count": 3200,
+        "rate": 10,
+        "repeat": 2,
+        "actual": {
+          "counts": [
+            2000,
+            1000,
+            200
+          ],
+          "total": 3200,
+          "frontFilter": "blur(2px)",
+          "controlsHidden": true
+        },
+        "elapsedMs": 20001.400000095367,
+        "clock": {
+          "frames": 1200,
+          "fps": 59.99580029369336,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 1199,
+            "mean": 16.666055045871563,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.80000000000109,
+            "max": 16.80000000000291,
+            "sum": 19982.600000000002
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "effect": {
+          "frames": 1200,
+          "fps": 59.99580029369336,
+          "minRolling1sFps": 60,
+          "intervalMs": {
+            "n": 1199,
+            "mean": 16.666055045871563,
+            "p50": 16.699999999999818,
+            "p95": 16.700000000000728,
+            "p99": 16.80000000000109,
+            "max": 16.80000000000291,
+            "sum": 19982.600000000002
+          },
+          "gapsOver25ms": 0,
+          "gapsOver50ms": 0
+        },
+        "canvases": {
+          "backLayer": {
+            "frames": 1200,
+            "fps": 59.99580029369336,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.666055045871563,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.80000000000109,
+              "max": 16.80000000000291,
+              "sum": 19982.600000000002
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "middleLayer": {
+            "frames": 1200,
+            "fps": 59.99580029369336,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.666055045871563,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.80000000000109,
+              "max": 16.80000000000291,
+              "sum": 19982.600000000002
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          },
+          "frontLayer": {
+            "frames": 1200,
+            "fps": 59.99580029369336,
+            "minRolling1sFps": 60,
+            "intervalMs": {
+              "n": 1199,
+              "mean": 16.666055045871563,
+              "p50": 16.699999999999818,
+              "p95": 16.700000000000728,
+              "p99": 16.80000000000109,
+              "max": 16.80000000000291,
+              "sum": 19982.600000000002
+            },
+            "gapsOver25ms": 0,
+            "gapsOver50ms": 0
+          }
+        },
+        "callbackWorkMs": {
+          "n": 1200,
+          "mean": 4.954583330949148,
+          "p50": 5,
+          "p95": 6,
+          "p99": 6.700000047683716,
+          "max": 7.900000095367432,
+          "sum": 5945.499997138977
+        },
+        "cpuWorkMsPerSecond": 297.2541920620871,
+        "longTasks": [],
+        "viewport": {
+          "width": 393,
+          "height": 852,
+          "dpr": 3
+        },
+        "buffers": [
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "pixels": 334836
+          }
+        ]
+      }
+    ],
+    "browser": "156.0.8078.48"
+  },
+  "panel": {
+    "version": "legacy",
+    "profile": "original-no-controls",
+    "count": 3200,
+    "rate": 10,
+    "actual": {
+      "counts": [
+        2000,
+        1000,
+        200
+      ],
+      "total": 3200,
+      "frontFilter": "blur(2px)",
+      "controlsHidden": true
+    },
+    "elapsedMs": 20000.900000095367,
+    "clock": {
+      "frames": 1178,
+      "fps": 58.897349618986304,
+      "minRolling1sFps": 54,
+      "intervalMs": {
+        "n": 1177,
+        "mean": 16.977570093457945,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999272,
+        "p99": 33.30000000000109,
+        "max": 83.39999999999964,
+        "sum": 19982.600000000002
+      },
+      "gapsOver25ms": 18,
+      "gapsOver50ms": 2
+    },
+    "effect": {
+      "frames": 1178,
+      "fps": 58.897349618986304,
+      "minRolling1sFps": 54,
+      "intervalMs": {
+        "n": 1177,
+        "mean": 16.977570093457945,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999272,
+        "p99": 33.30000000000109,
+        "max": 83.39999999999964,
+        "sum": 19982.600000000002
+      },
+      "gapsOver25ms": 18,
+      "gapsOver50ms": 2
+    },
+    "canvases": {
+      "backLayer": {
+        "frames": 1178,
+        "fps": 58.897349618986304,
+        "minRolling1sFps": 54,
+        "intervalMs": {
+          "n": 1177,
+          "mean": 16.977570093457945,
+          "p50": 16.699999999999818,
+          "p95": 16.799999999999272,
+          "p99": 33.30000000000109,
+          "max": 83.39999999999964,
+          "sum": 19982.600000000002
+        },
+        "gapsOver25ms": 18,
+        "gapsOver50ms": 2
+      },
+      "middleLayer": {
+        "frames": 1178,
+        "fps": 58.897349618986304,
+        "minRolling1sFps": 54,
+        "intervalMs": {
+          "n": 1177,
+          "mean": 16.977570093457945,
+          "p50": 16.699999999999818,
+          "p95": 16.799999999999272,
+          "p99": 33.30000000000109,
+          "max": 83.39999999999964,
+          "sum": 19982.600000000002
+        },
+        "gapsOver25ms": 18,
+        "gapsOver50ms": 2
+      },
+      "frontLayer": {
+        "frames": 1178,
+        "fps": 58.897349618986304,
+        "minRolling1sFps": 54,
+        "intervalMs": {
+          "n": 1177,
+          "mean": 16.977570093457945,
+          "p50": 16.699999999999818,
+          "p95": 16.799999999999272,
+          "p99": 33.30000000000109,
+          "max": 83.39999999999964,
+          "sum": 19982.600000000002
+        },
+        "gapsOver25ms": 18,
+        "gapsOver50ms": 2
+      }
+    },
+    "callbackWorkMs": {
+      "n": 1178,
+      "mean": 5.091171475946397,
+      "p50": 5.099999904632568,
+      "p95": 6.200000047683716,
+      "p99": 6.699999809265137,
+      "max": 7.400000095367432,
+      "sum": 5997.399998664856
+    },
+    "cpuWorkMsPerSecond": 299.85650638902547,
+    "longTasks": [],
+    "viewport": {
+      "width": 393,
+      "height": 852,
+      "dpr": 3
+    },
+    "buffers": [
+      {
+        "width": 393,
+        "height": 852,
+        "pixels": 334836
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "pixels": 334836
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "pixels": 334836
+      }
+    ]
+  }
+}

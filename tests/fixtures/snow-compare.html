@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Snow comparison fixture</title>
+<style>*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#1c2430}#scene{position:relative;overflow:hidden;width:100vw;height:100dvh;isolation:isolate}img{display:block;width:100%;height:100%;object-fit:cover}</style>
+<div id="scene"><img src="../../assets/main.png" alt="Макет"></div>
+<script type="module">
+import {Snow} from '../../src/snow.js';
+window.effect=new Snow(document.querySelector('#scene'),{count:Number(new URLSearchParams(location.search).get('count')??40)},{referenceWidth:393});
+</script></html>

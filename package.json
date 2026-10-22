@@ -8,7 +8,8 @@
     "dev": "node scripts/serve.mjs",
     "test": "node --test",
     "check": "node --check src/snow.js && node --check src/app.js",
-    "perf": "node scripts/benchmark.mjs"
+    "perf": "node scripts/benchmark.mjs",
+    "compare:legacy": "node scripts/compare-legacy.mjs"
   },
   "engines": {
     "node": ">=20"
