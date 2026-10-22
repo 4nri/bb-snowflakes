@@ -38,6 +38,7 @@ try{
    assert.ok(Math.max(...tops)-Math.min(...tops)<=.5,'Action text tops aligned at '+name);
    assert.ok(Math.max(...bottoms)-Math.min(...bottoms)<=.5,'Action text baselines aligned at '+name);
    for(const a of data.actions)assert.ok(a.textRect.left>=a.rect.left-1&&a.textRect.right<=a.rect.right+1,'Action text fits: '+a.text);
+   for(const a of data.actions)assert.ok(a.rect.left>=data.export.left-.5&&a.rect.right<=data.export.right+.5,'Actions stay within panel content at '+name);
    for(const s of data.selects)assert.ok(s.textWidth<=s.available,'Selected option fits at '+name+': '+s.id);
    for(let i=1;i<data.controls.length;i++){
     const a=data.controls[i-1],b=data.controls[i];

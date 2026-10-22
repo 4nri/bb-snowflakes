@@ -107,7 +107,7 @@ input[type="range"]::-moz-range-thumb { width: 11px; height: 11px; border: 2px s
 .panel-bottom { flex-shrink: 0; padding: 16px 22px 12px; border-top: 1px solid var(--line); background: var(--surface); }
 .primary { width: 100%; min-height: 42px; border-color: #d7c300; background: var(--accent); color: #20262c; font-weight: 600; }
 .primary:hover { border-color: #a29300; background: #f4da00; }
-.secondary-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 9px; }
+.secondary-actions { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-top: 9px; }
 .secondary-actions button, .secondary-actions a { display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; padding: 6px 0; min-height: 32px; font-size: 12px; line-height: 18px; font-weight: 400; white-space: nowrap; color: var(--muted); }
 .secondary-actions button:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
 .motion-notice { position: absolute; left: 28px; right: 28px; bottom: 94px; margin: 0; padding: 12px 16px; background: #fffbe0; border-left: 3px solid #a29300; font-size: 13px; line-height: 1.5; }
